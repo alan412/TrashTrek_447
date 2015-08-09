@@ -41,12 +41,12 @@
                             <ConfigurableMethodTerminal ConfiguredValue="False">
                                 <Terminal Id="Result" Direction="Output" DataType="Boolean" Hotspot="0.5 1" Bounds="0 0 0 0" />
                             </ConfigurableMethodTerminal>
-                            <Terminal Id="SequenceIn" Direction="Input" Wire="w12" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
+                            <Terminal Id="SequenceIn" Direction="Input" Wire="w17" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
                             <Terminal Id="SequenceOut" Direction="Output" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="0 0 0 0" />
                         </ConfigurableMethodCall>
                     </ConfigurableWhileLoop.BuiltInMethod>
                     <ConfigurableMethodCall Id="n7" Bounds="47 112 132 91" Target="GyroAngleAndRate\.vix">
-                        <ConfigurableMethodTerminal ConfiguredValue="1.2">
+                        <ConfigurableMethodTerminal ConfiguredValue="1.1">
                             <Terminal Id="Port" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="0 0 0 0" />
                         </ConfigurableMethodTerminal>
                         <ConfigurableMethodTerminal>
@@ -97,12 +97,11 @@
                             <Terminal Id="Result" Direction="Output" Wire="w16" DataType="Boolean" Hotspot="0.5 1" Bounds="116 56 30 27" />
                         </ConfigurableMethodTerminal>
                         <Terminal Id="SequenceIn" Direction="Input" Wire="w11" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
-                        <Terminal Id="SequenceOut" Direction="Output" Wire="w12" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="145 33 18 18" />
+                        <Terminal Id="SequenceOut" Direction="Output" Wire="w17" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="145 33 18 18" />
                     </ConfigurableMethodCall>
                     <Wire Id="w10" Joints="N(n6:SequenceOut) N(n8:SequenceIn)" />
                     <Wire Id="w11" Joints="N(n8:SequenceOut) N(n10:SequenceIn)" />
-                    <Wire Id="w12" Joints="N(n10:SequenceOut) N(n1:SequenceIn)" />
-                    <Wire Id="w13" Joints="N(n7:Angle) v(22) h(132) N(n6:x) B(0) v(30) h(295) N(n8:x)" />
+                    <Wire Id="w13" Joints="N(n7:Angle) v(30) h(295) N(n8:x) B(0) v(22) h(132) N(n6:x)" />
                     <Wire Id="w14" Joints="N(n8:Result) v(22) h(101) N(n10:A)" />
                     <Wire Id="w15" Joints="N(n6:Result) v(38) h(295) N(n10:B)" />
                     <Wire Id="w16" Joints="N(n10:Result) v(22) h(101) N(n1:Do\ Stop)" />
@@ -118,9 +117,10 @@ until reset</Content>
                     <Comment Bounds="560 26 158 80" SizeMode="User" AttachStyle="Free">
                         <Content>exit loop if sensor sends back something that is a number then it is calibrated</Content>
                     </Comment>
+                    <Wire Id="w17" Joints="N(n10:SequenceOut) N(n1:SequenceIn)" />
                 </ConfigurableWhileLoop>
                 <ConfigurableMethodCall Id="n2" Bounds="168 34 101 91" Target="GyroDegrees\.vix">
-                    <ConfigurableMethodTerminal ConfiguredValue="1.2">
+                    <ConfigurableMethodTerminal ConfiguredValue="1.1">
                         <Terminal Id="Port" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="0 0 0 0" />
                     </ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal>
