@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EditorDefinitions>
+  <PolyGroups>
+    <PolyGroup BlockFamily="My" IconBaseName="PolyGroup_024_MoveTank">
+      <Block>
+        <Mode>MyBlock</Mode>
+        <Description />
+        <Reference Type="VILib" />
+        <PaletteInfo Weight="0.5" />
+        <ParamInfo Name="Speed" DisplayName="Speed" Direction="Input" Identification="Identification_202_Speed_Plus50.png" DataType="Single" DefaultValue="50" Configuration="SliderHorizontal.custom" MinValue="-100" MaxValue="100" />
+        <ParamInfo Name="degrees" DisplayName="degrees" Direction="Input" Identification="Identification_037_NumberOfDecimals.png" DataType="Single" DefaultValue="0" Configuration="SliderHorizontal.custom" MinValue="0" MaxValue="180" />
+        <ParamInfo Name="Brake?" DisplayName="Brake?" Direction="Input" Identification="Identification_508_BrakeAtEnd_Brake.png" DataType="Boolean" DefaultValue="True" />
+        <ParamInfo Name="Turn Right?" DisplayName="Turn Right?" Direction="Input" Identification="Identification_224_Steering_Right_Full_Forward.png" DataType="Boolean" DefaultValue="True" />
+      </Block>
+    </PolyGroup>
+  </PolyGroups>
+</EditorDefinitions>
