@@ -101,13 +101,13 @@
                     </ConfigurableMethodCall>
                     <Wire Id="w10" Joints="N(n6:SequenceOut) N(n8:SequenceIn)" />
                     <Wire Id="w11" Joints="N(n8:SequenceOut) N(n10:SequenceIn)" />
-                    <Wire Id="w13" Joints="N(n7:Angle) v(22) h(132) N(n6:x) B(0) v(30) h(295) N(n8:x)" />
+                    <Wire Id="w13" Joints="N(n7:Angle) v(30) h(295) N(n8:x) B(0) v(22) h(132) N(n6:x)" />
                     <Wire Id="w14" Joints="N(n8:Result) v(22) h(101) N(n10:A)" />
                     <Wire Id="w15" Joints="N(n6:Result) v(38) h(295) N(n10:B)" />
                     <Wire Id="w16" Joints="N(n10:Result) v(22) h(101) N(n1:Do\ Stop)" />
                     <Comment Bounds="43 15 100 80" SizeMode="User" AttachStyle="Free">
                         <Content>this will give
-Not A number 
+Not A Number 
 (NaN)
 until reset</Content>
                     </Comment>
