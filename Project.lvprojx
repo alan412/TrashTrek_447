@@ -42,7 +42,7 @@
                 <SourceFileReference StoragePath="test pivot.ev3p" RelativeStoragePath="test pivot.ev3p" OverridingDocumentTypeIdentifier="X3VIDocument" DocumentTypeIdentifier="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="test\ pivot\.ev3p" Bindings="Envoy,DefinitionReference,SourceFileReference,X3VIDocument">
                     <X3DocumentSettings ShowFileOnStartup="False" IsTeacherOnlyFile="False" IsHiddenDependency="False" xmlns="http://www.ni.com/X3DocumentSettings.xsd" />
                 </SourceFileReference>
-                <SourceFileReference StoragePath="Program2.ev3p" RelativeStoragePath="Program2.ev3p" OverridingDocumentTypeIdentifier="X3VIDocument" DocumentTypeIdentifier="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Program2\.ev3p" Bindings="Envoy,DefinitionReference,SourceFileReference,X3VIDocument">
+                <SourceFileReference StoragePath="SquareLineTest.ev3p" RelativeStoragePath="SquareLineTest.ev3p" OverridingDocumentTypeIdentifier="X3VIDocument" DocumentTypeIdentifier="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="SquareLineTest\.ev3p" Bindings="Envoy,DefinitionReference,SourceFileReference,X3VIDocument">
                     <X3DocumentSettings ShowFileOnStartup="False" IsTeacherOnlyFile="False" IsHiddenDependency="False" xmlns="http://www.ni.com/X3DocumentSettings.xsd" />
                 </SourceFileReference>
                 <SourceFileReference StoragePath="gyroCalib.ev3p" RelativeStoragePath="gyroCalib.ev3p" OverridingDocumentTypeIdentifier="X3VIDocument" DocumentTypeIdentifier="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="gyroCalib\.ev3p" Bindings="Envoy,DefinitionReference,SourceFileReference,X3VIDocument">

@@ -33,7 +33,7 @@
                         <Terminal Id="Turn\ Right\?" Direction="Output" Wire="w14" DataType="Boolean" Hotspot="0.5 1" Bounds="103 56 30 27" />
                     </ConfigurableMethodTerminal>
                 </ConfigurableMegaAccessor>
-                <ConfigurableCaseStructure Id="n8" Bounds="998 -132 288 310" DataType="Boolean" UserSelectorBounds="0 0 0 0" Selected="D10" Default="D9" PairedConfigurableMethodCall="n11">
+                <ConfigurableCaseStructure Id="n8" Bounds="998 -132 288 310" DataType="Boolean" UserSelectorBounds="0 0 0 0" Selected="D9" Default="D9" PairedConfigurableMethodCall="n11">
                     <Terminal Id="SequenceOut" Direction="Output" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="270 165 18 18" />
                     <ConfigurableCaseStructure.Case Id="D9" Bounds="10 4 268 303" Pattern="True">
                         <SequenceNode Id="Output" Bounds="0 161 18 18">
@@ -122,7 +122,7 @@
                     <Terminal Id="SequenceIn" Direction="Input" Wire="w34" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
                     <Terminal Id="SequenceOut" Direction="Output" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="0 0 0 0" />
                 </PairedConfigurableMethodCall>
-                <Wire Id="w10" Joints="N(n9:Speed) v(38) h(999) N(n22:Y) B(0) v(177) h(1245) N(b23:n8)" />
+                <Wire Id="w10" Joints="N(n9:Speed) v(177) h(1245) N(b23:n8) B(0) v(38) h(999) N(n22:Y)" />
                 <Wire Id="w12" Joints="N(n9:Brake\?) v(114.5) h(1279) N(b26:n8)" />
                 <Wire Id="w14" Joints="N(n9:Turn\ Right\?) v(22) h(1038) N(n11:Boolean)" />
                 <Comment Bounds="-174 -145 223 129" SizeMode="User" AttachStyle="Free">
@@ -216,6 +216,12 @@
                 <Wire Id="w34" Joints="N(n22:SequenceOut) N(n11:SequenceIn)" />
                 <Comment Bounds="1300 -24 191 150" SizeMode="User" AttachStyle="Free">
                     <Content>We use a switch block to determine if the robot is turning left or right. The only difference is that to turn right, the negetive speed is fed to the right motor and the positive speed is fed to the left one to turn right, it is the oposite.</Content>
+                </Comment>
+                <Comment Bounds="152 -66 545 44" SizeMode="User" AttachStyle="Free">
+                    <Content>This math calculates how many degrees each wheel needs to turn in order to turn the robot the desired amount of degrees.</Content>
+                </Comment>
+                <Comment Bounds="758 -77 149 74" SizeMode="User" AttachStyle="Free">
+                    <Content>This calculates a negetive speed the other wheel needs to turn.</Content>
                 </Comment>
             </BlockDiagram>
             <Icon>
