@@ -48,20 +48,17 @@
                             <Terminal Id="SequenceOut" Direction="Output" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="0 0 0 0" />
                         </ConfigurableMethodCall>
                     </ConfigurableWhileLoop.BuiltInMethod>
-                    <ConfigurableMethodCall Id="n9" Bounds="47 262 132 91" Target="GyroAngleAndRate\.vix">
+                    <ConfigurableMethodCall Id="n9" Bounds="47 262 101 91" Target="GyroDegrees\.vix">
                         <ConfigurableMethodTerminal ConfiguredValue="1.1">
                             <Terminal Id="Port" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="0 0 0 0" />
                         </ConfigurableMethodTerminal>
                         <ConfigurableMethodTerminal>
                             <Terminal Id="Angle" Direction="Output" Wire="w13" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
                         </ConfigurableMethodTerminal>
-                        <ConfigurableMethodTerminal>
-                            <Terminal Id="Rate" Direction="Output" DataType="Single" Hotspot="0.5 1" Bounds="85 56 30 27" />
-                        </ConfigurableMethodTerminal>
                         <Terminal Id="SequenceIn" Direction="Input" Wire="w7" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
-                        <Terminal Id="SequenceOut" Direction="Output" Wire="w10" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="114 33 18 18" />
+                        <Terminal Id="SequenceOut" Direction="Output" Wire="w10" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="83 33 18 18" />
                     </ConfigurableMethodCall>
-                    <ConfigurableMethodCall Id="n11" Bounds="179 262 163 91" Target="Comparison_Equal\.vix">
+                    <ConfigurableMethodCall Id="n11" Bounds="148 262 163 91" Target="Comparison_Equal\.vix">
                         <ConfigurableMethodTerminal ConfiguredValue="1">
                             <Terminal Id="x" Direction="Input" Wire="w13" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
                         </ConfigurableMethodTerminal>
@@ -74,12 +71,12 @@
                         <Terminal Id="SequenceIn" Direction="Input" Wire="w10" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
                         <Terminal Id="SequenceOut" Direction="Output" Wire="w12" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="145 33 18 18" />
                     </ConfigurableMethodCall>
-                    <Wire Id="w13" Joints="N(n9:Angle) v(22) h(132) N(n11:x)" />
+                    <Wire Id="w13" Joints="N(n9:Angle) v(22) h(101) N(n11:x)" />
                     <Wire Id="w10" Joints="N(n9:SequenceOut) N(n11:SequenceIn)" />
                     <Wire Id="w7" Joints="N(n0:SequenceOut) N(n9:SequenceIn)" />
                     <Wire Id="w12" Joints="N(n11:SequenceOut) N(n37:SequenceIn)" />
                     <Wire Id="w15" Joints="N(n11:Result) v(-79) h(101) N(n37:Boolean)" />
-                    <ConfigurableMethodCall Id="n15" Bounds="1155 161 101 91" Target="X3\.Lib:GlobalSetSingle">
+                    <ConfigurableMethodCall Id="n15" Bounds="1124 161 101 91" Target="X3\.Lib:GlobalSetSingle">
                         <ConfigurableMethodTerminal ConfiguredValue="Wheel Circ">
                             <Terminal Id="name" Direction="Input" DataType="String" Hotspot="0.5 1" Bounds="0 0 0 0" />
                         </ConfigurableMethodTerminal>
@@ -92,7 +89,7 @@
                         <Terminal Id="SequenceIn" Direction="Input" Wire="w30" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
                         <Terminal Id="SequenceOut" Direction="Output" Wire="w18" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="83 33 18 18" />
                     </ConfigurableMethodCall>
-                    <ConfigurableMethodCall Id="n6" Bounds="1357 161 163 91" Target="Arithmetic_Divide\.vix">
+                    <ConfigurableMethodCall Id="n6" Bounds="1326 161 163 91" Target="Arithmetic_Divide\.vix">
                         <ConfigurableMethodTerminal ConfiguredValue="50">
                             <Terminal Id="X" Direction="Input" Wire="w34" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
                         </ConfigurableMethodTerminal>
@@ -109,7 +106,7 @@
                     <Comment Bounds="1169 44 377 80" SizeMode="User" AttachStyle="Free">
                         <Content>Takes the wheel circumference and divides it by the number of centimeters.  The result is the number of rotatons that the wheel spins</Content>
                     </Comment>
-                    <ConfigurableMethodCall Id="n20" Bounds="1520 161 101 91" Target="RotationValueRotations\.vix">
+                    <ConfigurableMethodCall Id="n20" Bounds="1489 161 101 91" Target="RotationValueRotations\.vix">
                         <ConfigurableMethodTerminal ConfiguredValue="1.B">
                             <Terminal Id="MotorPort" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="0 0 0 0" />
                         </ConfigurableMethodTerminal>
@@ -119,7 +116,7 @@
                         <Terminal Id="SequenceIn" Direction="Input" Wire="w23" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
                         <Terminal Id="SequenceOut" Direction="Output" Wire="w26" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="83 33 18 18" />
                     </ConfigurableMethodCall>
-                    <ConfigurableMethodCall Id="n22" Bounds="1621 161 163 91" Target="Comparison_GreaterEqual\.vix">
+                    <ConfigurableMethodCall Id="n22" Bounds="1590 161 163 91" Target="Comparison_GreaterEqual\.vix">
                         <ConfigurableMethodTerminal ConfiguredValue="1">
                             <Terminal Id="x" Direction="Input" Wire="w27" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
                         </ConfigurableMethodTerminal>
@@ -134,9 +131,9 @@
                     </ConfigurableMethodCall>
                     <Wire Id="w23" Joints="N(n6:SequenceOut) N(n20:SequenceIn)" />
                     <Wire Id="w26" Joints="N(n20:SequenceOut) N(n22:SequenceIn)" />
-                    <Wire Id="w28" Joints="N(n22:Result) v(113) h(62) N(n1:Do\ Stop)" />
+                    <Wire Id="w28" Joints="N(n22:Result) v(113) h(93) N(n1:Do\ Stop)" />
                     <Wire Id="w30" Joints="N(n34:SequenceOut) N(n15:SequenceIn)" />
-                    <ConfigurableMethodCall Id="n26" Bounds="1256 161 101 91" Target="X3\.Lib:GlobalGetSingle">
+                    <ConfigurableMethodCall Id="n26" Bounds="1225 161 101 91" Target="X3\.Lib:GlobalGetSingle">
                         <ConfigurableMethodTerminal>
                             <Terminal Id="valueOut" Direction="Output" Wire="w32" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
                         </ConfigurableMethodTerminal>
@@ -150,9 +147,9 @@
                     <Wire Id="w32" Joints="N(n26:valueOut) v(22) h(132) N(n6:Y)" />
                     <Wire Id="w27" Joints="N(n20:Rotations) v(22) h(101) N(n22:x)" />
                     <Wire Id="w33" Joints="N(n6:Result) v(30) h(233) N(n22:y)" />
-                    <Wire Id="w34" Joints="N(b28:d0) h(16) N(n6:X)" />
-                    <Wire Id="w35" Joints="N(b30:d0) N(n11:y)" />
-                    <ConfigurableCaseStructure Id="n34" Bounds="427 14 728 383" DataType="Boolean" UserSelectorBounds="0 0 0 0" Selected="D36" Default="D35" PairedConfigurableMethodCall="n37">
+                    <Wire Id="w34" Joints="N(b28:d0) h(-15) N(n6:X)" />
+                    <Wire Id="w35" Joints="N(b30:d0) h(-31) N(n11:y)" />
+                    <ConfigurableCaseStructure Id="n34" Bounds="396 14 728 383" DataType="Boolean" UserSelectorBounds="0 0 0 0" Selected="D36" Default="D35" PairedConfigurableMethodCall="n37">
                         <Terminal Id="SequenceOut" Direction="Output" Wire="w30" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="710 180 18 18" />
                         <ConfigurableCaseStructure.Case Id="D35" Bounds="10 4 708 376" Pattern="True">
                             <SequenceNode Id="Output" Bounds="0 176 18 18">
@@ -187,21 +184,18 @@
                             <SequenceNode Id="Input" Bounds="681 176 18 18">
                                 <Terminal Id="SequenceTerminal" Direction="Input" Wire="w17" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 0 18 18" />
                             </SequenceNode>
-                            <ConfigurableMethodCall Id="n7" Bounds="18 143 132 91" Target="GyroAngleAndRate\.vix">
+                            <ConfigurableMethodCall Id="n7" Bounds="27 143 101 91" Target="GyroDegrees\.vix">
                                 <ConfigurableMethodTerminal ConfiguredValue="1.1">
                                     <Terminal Id="Port" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="0 0 0 0" />
                                 </ConfigurableMethodTerminal>
                                 <ConfigurableMethodTerminal>
                                     <Terminal Id="Angle" Direction="Output" Wire="w8" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
                                 </ConfigurableMethodTerminal>
-                                <ConfigurableMethodTerminal>
-                                    <Terminal Id="Rate" Direction="Output" DataType="Single" Hotspot="0.5 1" Bounds="85 56 30 27" />
-                                </ConfigurableMethodTerminal>
                                 <Terminal Id="SequenceIn" Direction="Input" Wire="w4" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
-                                <Terminal Id="SequenceOut" Direction="Output" Wire="w6" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="114 33 18 18" />
+                                <Terminal Id="SequenceOut" Direction="Output" Wire="w6" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="83 33 18 18" />
                             </ConfigurableMethodCall>
                             <Wire Id="w4" Joints="N(Output:SequenceTerminal) N(n7:SequenceIn)" />
-                            <ConfigurableMethodCall Id="n6" Bounds="150 143 163 91" Target="Comparison_Greater\.vix">
+                            <ConfigurableMethodCall Id="n6" Bounds="119 143 163 91" Target="Comparison_Greater\.vix">
                                 <ConfigurableMethodTerminal ConfiguredValue="1">
                                     <Terminal Id="x" Direction="Input" Wire="w8" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
                                 </ConfigurableMethodTerminal>
@@ -215,11 +209,11 @@
                                 <Terminal Id="SequenceOut" Direction="Output" Wire="w12" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="145 33 18 18" />
                             </ConfigurableMethodCall>
                             <Wire Id="w6" Joints="N(n7:SequenceOut) N(n6:SequenceIn)" />
-                            <Wire Id="w8" Joints="N(n7:Angle) v(22) h(132) N(n6:x)" />
+                            <Wire Id="w8" Joints="N(n7:Angle) v(22) h(92) N(n6:x)" />
                             <Wire Id="w12" Joints="N(n6:SequenceOut) N(n20:SequenceIn)" />
                             <Wire Id="w14" Joints="N(n6:Result) v(22) h(101) N(n20:Boolean)" />
-                            <Wire Id="w16" Joints="N(b34:D36) N(n6:y)" />
-                            <ConfigurableCaseStructure Id="n17" Bounds="398 97 288 176" DataType="Boolean" UserSelectorBounds="0 0 0 0" Selected="D18" Default="D18" PairedConfigurableMethodCall="n20">
+                            <Wire Id="w16" Joints="N(b34:D36) h(-31) N(n6:y)" />
+                            <ConfigurableCaseStructure Id="n17" Bounds="367 97 288 176" DataType="Boolean" UserSelectorBounds="0 0 0 0" Selected="D18" Default="D18" PairedConfigurableMethodCall="n20">
                                 <Terminal Id="SequenceOut" Direction="Output" Wire="w17" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="270 79 18 18" />
                                 <ConfigurableCaseStructure.Case Id="D18" Bounds="10 4 268 169" Pattern="True">
                                     <SequenceNode Id="Output" Bounds="0 75 18 18">
@@ -274,7 +268,7 @@
                                     <Wire Id="w5" Joints="N(n6:SequenceOut) N(Input:SequenceTerminal)" />
                                 </ConfigurableCaseStructure.Case>
                             </ConfigurableCaseStructure>
-                            <PairedConfigurableMethodCall Id="n20" Bounds="313 143 85 91" Target="CaseSelector_Boolean\.vix" PairedStructure="n17">
+                            <PairedConfigurableMethodCall Id="n20" Bounds="282 143 85 91" Target="CaseSelector_Boolean\.vix" PairedStructure="n17">
                                 <ConfigurableMethodTerminal ConfiguredValue="False">
                                     <Terminal Id="Boolean" Direction="Input" Wire="w14" DataType="Boolean" Hotspot="0.5 1" Bounds="54 56 30 27" />
                                 </ConfigurableMethodTerminal>
@@ -284,11 +278,11 @@
                                 <Terminal Id="SequenceIn" Direction="Input" Wire="w12" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
                                 <Terminal Id="SequenceOut" Direction="Output" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="0 0 0 0" />
                             </PairedConfigurableMethodCall>
-                            <Wire Id="w17" Joints="N(n17:SequenceOut) h(14) v(-14) h(-33) v(14) N(Input:SequenceTerminal)" />
+                            <Wire Id="w17" Joints="N(n17:SequenceOut) N(Input:SequenceTerminal)" />
                         </ConfigurableCaseStructure.Case>
                         <ConfigurableCaseStructure.ConfigurableCaseTunnel Id="b34" Terminals="n34=w37, D35, D36=w16" Bounds="245 350 30 63" />
                     </ConfigurableCaseStructure>
-                    <PairedConfigurableMethodCall Id="n37" Bounds="342 161 85 91" Target="CaseSelector_Boolean\.vix" PairedStructure="n34">
+                    <PairedConfigurableMethodCall Id="n37" Bounds="311 161 85 91" Target="CaseSelector_Boolean\.vix" PairedStructure="n34">
                         <ConfigurableMethodTerminal ConfiguredValue="False">
                             <Terminal Id="Boolean" Direction="Input" Wire="w15" DataType="Boolean" Hotspot="0.5 1" Bounds="54 56 30 27" />
                         </ConfigurableMethodTerminal>
@@ -298,8 +292,8 @@
                         <Terminal Id="SequenceIn" Direction="Input" Wire="w12" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
                         <Terminal Id="SequenceOut" Direction="Output" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="0 0 0 0" />
                     </PairedConfigurableMethodCall>
-                    <Wire Id="w37" Joints="N(b32:d0) v(-74.5) h(57) N(b34:n34)" />
-                    <Wire Id="w36" Joints="N(n22:SequenceOut) h(14) v(87) h(-67) v(14) N(n1:SequenceIn)" />
+                    <Wire Id="w37" Joints="N(b32:d0) v(-74.5) h(26) N(b34:n34)" />
+                    <Wire Id="w36" Joints="N(n22:SequenceOut) h(8) v(93) h(-24) v(8) N(n1:SequenceIn)" />
                     <ConfigurableWhileLoop.ConfigurableLoopTunnel AutoIndex="False" Id="b28" Terminals="n15=w6, d0=w34" Bounds="1411 565 30 63" />
                     <ConfigurableWhileLoop.ConfigurableLoopTunnel AutoIndex="False" Id="b30" Terminals="n15=w10, d0=w35" Bounds="280 565 30 63" />
                     <ConfigurableWhileLoop.ConfigurableLoopTunnel AutoIndex="False" Id="b32" Terminals="n15=w10, d0=w37" Bounds="631 565 30 63" />
@@ -334,7 +328,7 @@
                     <Terminal Id="SequenceOut" Direction="Output" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="83 33 18 18" />
                 </ConfigurableMethodCall>
                 <Wire Id="w9" Joints="N(n15:SequenceOut) N(n8:SequenceIn)" />
-                <Wire Id="w10" Joints="N(n10:Gyro\ degrees) v(478) h(934) N(b32:n15) B(0) v(369) h(583) N(b30:n15)" />
+                <Wire Id="w10" Joints="N(n10:Gyro\ degrees) v(369) h(583) N(b30:n15) B(0) v(478) h(934) N(b32:n15)" />
                 <Wire Id="w13" Joints="N(n10:Brake) v(247) h(2190) N(n8:Brake\ At\ End)" />
                 <ConfigurableMethodCall Id="n14" Bounds="387 0 75 91" Target="RotationReset\.vix">
                     <ConfigurableMethodTerminal ConfiguredValue="1.B">
@@ -354,16 +348,16 @@
                         <fpruntime:EventContainer />
                     </fpruntime:EventProperties.Events>
                     <Model0:IconPanel.Background>
-                        <ation:LinearGradientBrush ation:StartPoint="0.5, 0" ation:EndPoint="0.5, 1">
-                            <ation:GradientStop ation:Color="#FFF6F5C6" />
-                            <ation:GradientStop ation:Color="#FFFFFFFE" ation:Offset="0.25" />
-                            <ation:GradientStop ation:Color="#FFF6F5C6" ation:Offset="1" />
+                        <ation:LinearGradientBrush StartPoint="0.5, 0" EndPoint="0.5, 1">
                             <ation:LinearGradientBrush.Transform>
                                 <ation:MatrixTransform />
                             </ation:LinearGradientBrush.Transform>
                             <ation:LinearGradientBrush.RelativeTransform>
                                 <ation:MatrixTransform />
                             </ation:LinearGradientBrush.RelativeTransform>
+                            <ation:GradientStop Color="#FFF6F5C6" />
+                            <ation:GradientStop Color="#FFFFFFFE" Offset="0.25" />
+                            <ation:GradientStop Color="#FFF6F5C6" Offset="1" />
                         </ation:LinearGradientBrush>
                     </Model0:IconPanel.Background>
                     <ation:Rectangle x:Name="Template" Width="NaN" Height="NaN" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="0, 13, 0, 0" ation:Grid.Row="0" ation:Grid.Column="0" ation:Grid.RowSpan="1" ation:Grid.ColumnSpan="1" Fill="#00FFFFFF" Stroke="#FF000000" StrokeThickness="1" RadiusX="0" RadiusY="0">
@@ -382,15 +376,15 @@
                             <fpruntime:EventContainer />
                         </fpruntime:EventProperties.Events>
                         <ation:Rectangle.Fill>
-                            <ation:LinearGradientBrush ation:StartPoint="0.5, 0" ation:EndPoint="0.5, 1">
-                                <ation:GradientStop ation:Color="#FFFFFFFF" />
-                                <ation:GradientStop ation:Color="#FFD5EAEA" ation:Offset="1" />
+                            <ation:LinearGradientBrush StartPoint="0.5, 0" EndPoint="0.5, 1">
                                 <ation:LinearGradientBrush.Transform>
                                     <ation:MatrixTransform />
                                 </ation:LinearGradientBrush.Transform>
                                 <ation:LinearGradientBrush.RelativeTransform>
                                     <ation:MatrixTransform />
                                 </ation:LinearGradientBrush.RelativeTransform>
+                                <ation:GradientStop Color="#FFFFFFFF" />
+                                <ation:GradientStop Color="#FFD5EAEA" Offset="1" />
                             </ation:LinearGradientBrush>
                         </ation:Rectangle.Fill>
                     </ation:Rectangle>
