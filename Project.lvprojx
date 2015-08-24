@@ -82,6 +82,12 @@
                 <SourceFileReference StoragePath="test gyro.ev3p" RelativeStoragePath="test gyro.ev3p" OverridingDocumentTypeIdentifier="X3VIDocument" DocumentTypeIdentifier="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="test\ gyro\.ev3p" Bindings="Envoy,DefinitionReference,SourceFileReference,X3VIDocument" />
                 <SourceFileReference StoragePath="TurnRightGyro.ev3p" RelativeStoragePath="TurnRightGyro.ev3p" OverridingDocumentTypeIdentifier="X3VIDocument" DocumentTypeIdentifier="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="TurnRightGyro\.ev3p" Bindings="Envoy,DefinitionReference,SourceFileReference,X3VIDocument" />
                 <DefinitionReference DocumentTypeIdentifier="NationalInstruments.ExternalFileSupport.Modeling.ExternalFileType" Name="TurnRightGyro\.ev3p\.mbxml" Bindings="Envoy,DefinitionReference,EmbeddedReference,ProjectItemDragDropDefaultService" />
+                <SourceFileReference StoragePath="Program.ev3p" RelativeStoragePath="Program.ev3p" OverridingDocumentTypeIdentifier="X3VIDocument" DocumentTypeIdentifier="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Program\.ev3p" Bindings="Envoy,DefinitionReference,SourceFileReference,X3VIDocument" />
+                <SourceFileReference StoragePath="ToLine_Dark.ev3p" RelativeStoragePath="ToLine_Dark.ev3p" OverridingDocumentTypeIdentifier="X3VIDocument" DocumentTypeIdentifier="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="ToLine_Dark\.ev3p" Bindings="Envoy,DefinitionReference,SourceFileReference,X3VIDocument" />
+                <DefinitionReference DocumentTypeIdentifier="NationalInstruments.ExternalFileSupport.Modeling.ExternalFileType" Name="ToLine_Dark\.ev3p\.mbxml" Bindings="Envoy,DefinitionReference,EmbeddedReference,ProjectItemDragDropDefaultService" />
+                <SourceFileReference StoragePath="Program2.ev3p" RelativeStoragePath="Program2.ev3p" OverridingDocumentTypeIdentifier="X3VIDocument" DocumentTypeIdentifier="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Program2\.ev3p" Bindings="Envoy,DefinitionReference,SourceFileReference,X3VIDocument" />
+                <SourceFileReference StoragePath="ToLine_Light.ev3p" RelativeStoragePath="ToLine_Light.ev3p" OverridingDocumentTypeIdentifier="X3VIDocument" DocumentTypeIdentifier="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="ToLine_Light\.ev3p" Bindings="Envoy,DefinitionReference,SourceFileReference,X3VIDocument" />
+                <DefinitionReference DocumentTypeIdentifier="NationalInstruments.ExternalFileSupport.Modeling.ExternalFileType" Name="ToLine_Light\.ev3p\.mbxml" Bindings="Envoy,DefinitionReference,EmbeddedReference,ProjectItemDragDropDefaultService" />
             </Target>
             <ProjectSettings>
                 <NamedGlobalData xmlns="http://www.ni.com/X3NamedGlobalData.xsd">
@@ -90,6 +96,7 @@
                     <Datum Name="Lightest" Kind="Variable" Type="X3Numeric" />
                     <Datum Name="Darkest" Kind="Variable" Type="X3Numeric" />
                     <Datum Name="whichProgram" Kind="Variable" Type="X3Numeric" />
+                    <Datum Name="Speed" Kind="Variable" Type="X3Numeric" />
                 </NamedGlobalData>
                 <ProjectOrigin Path="en-US/Internal/FreePlayProgram.ev3" xmlns="http://www.ni.com/X3ProjectOrigin.xsd" />
                 <DaisyChainMode On="False" xmlns="http://www.ni.com/X3ProjectPropertiesModel.xsd" />
@@ -230,6 +237,18 @@
     <Namespace Name="TurnRightGyro\.ev3p\.mbxml">
         <ExternalFile xmlns="http://www.ni.com/ExternalFile.xsd">
             <RelativeStoragePath>TurnRightGyro.ev3p.mbxml</RelativeStoragePath>
+            <StoragePath />
+        </ExternalFile>
+    </Namespace>
+    <Namespace Name="ToLine_Dark\.ev3p\.mbxml">
+        <ExternalFile xmlns="http://www.ni.com/ExternalFile.xsd">
+            <RelativeStoragePath>ToLine_Dark.ev3p.mbxml</RelativeStoragePath>
+            <StoragePath />
+        </ExternalFile>
+    </Namespace>
+    <Namespace Name="ToLine_Light\.ev3p\.mbxml">
+        <ExternalFile xmlns="http://www.ni.com/ExternalFile.xsd">
+            <RelativeStoragePath>ToLine_Light.ev3p.mbxml</RelativeStoragePath>
             <StoragePath />
         </ExternalFile>
     </Namespace>
