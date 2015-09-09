@@ -69,7 +69,7 @@
                         <Wire Id="w11" Joints="N(n20:SequenceOut) N(Input:SequenceTerminal)" />
                         <Wire Id="w14" Joints="N(b32:D9) v(-31) h(-1.923) N(n20:Degrees)" />
                         <Wire Id="w13" Joints="N(b30:D9) N(n20:Speed\ Right)" />
-                        <Wire Id="w15" Joints="N(b23:D9) v(-4) h(-1) N(n20:Speed\ Left)" />
+                        <Wire Id="w15" Joints="N(b23:D9) v(-62) N(n20:Speed\ Left)" />
                     </ConfigurableCaseStructure.Case>
                     <ConfigurableCaseStructure.Case Id="D10" Bounds="10 4 268 303" Pattern="False">
                         <SequenceNode Id="Output" Bounds="0 161 18 18">
@@ -104,10 +104,10 @@
                         <Wire Id="w14" Joints="N(b32:D10) v(-31) h(-1.923) N(n20:Degrees)" />
                         <Wire Id="w12" Joints="N(Output:SequenceTerminal) N(n20:SequenceIn)" />
                         <Wire Id="w16" Joints="N(n20:SequenceOut) N(Input:SequenceTerminal)" />
-                        <Wire Id="w15" Joints="N(b23:D10) v(-62.082) h(22) v(0.082) N(n20:Speed\ Right)" />
-                        <Wire Id="w13" Joints="N(b30:D10) v(-40) h(-31) N(n20:Speed\ Left)" />
+                        <Wire Id="w15" Joints="N(b23:D10) v(-32) h(36) N(n20:Speed\ Right)" />
+                        <Wire Id="w13" Joints="N(b30:D10) v(-27) h(-15.5) v(-13) h(-15.5) N(n20:Speed\ Left)" />
                     </ConfigurableCaseStructure.Case>
-                    <ConfigurableCaseStructure.ConfigurableCaseTunnel Id="b23" Terminals="n8=w10, D9=w15, D10=w15" Bounds="83 277 30 63" />
+                    <ConfigurableCaseStructure.ConfigurableCaseTunnel Id="b23" Terminals="n8=w10, D9=w15, D10=w15" Bounds="77 277 30 63" />
                     <ConfigurableCaseStructure.ConfigurableCaseTunnel Id="b26" Terminals="n8=w12, D9=w28, D10=w11" Bounds="179 277 30 63" />
                     <ConfigurableCaseStructure.ConfigurableCaseTunnel Id="b30" Terminals="n8=w31, D9=w13, D10=w13" Bounds="113 277 30 63" />
                     <ConfigurableCaseStructure.ConfigurableCaseTunnel Id="b32" Terminals="n8=w33, D9=w14, D10=w14" Bounds="145.923 277 30 63" />
@@ -122,7 +122,7 @@
                     <Terminal Id="SequenceIn" Direction="Input" Wire="w34" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
                     <Terminal Id="SequenceOut" Direction="Output" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="0 0 0 0" />
                 </PairedConfigurableMethodCall>
-                <Wire Id="w10" Joints="N(n9:Speed) v(177) h(1245) N(b23:n8) B(0) v(38) h(999) N(n22:Y)" />
+                <Wire Id="w10" Joints="N(n9:Speed) v(38) h(999) N(n22:Y) B(0) v(177) h(1239) N(b23:n8)" />
                 <Wire Id="w12" Joints="N(n9:Brake\?) v(114.5) h(1279) N(b26:n8)" />
                 <Wire Id="w14" Joints="N(n9:Turn\ Right\?) v(22) h(1038) N(n11:Boolean)" />
                 <Comment Bounds="-174 -145 223 129" SizeMode="User" AttachStyle="Free">
@@ -221,7 +221,12 @@
                     <Content>This math calculates how many degrees each wheel needs to turn in order to turn the robot the desired amount of degrees.</Content>
                 </Comment>
                 <Comment Bounds="758 -77 149 74" SizeMode="User" AttachStyle="Free">
-                    <Content>This calculates a negetive speed the other wheel needs to turn.</Content>
+                    <Content>This calculates the negetive speed the other wheel needs to turn.</Content>
+                </Comment>
+                <Comment Bounds="455 -246 322 122" SizeMode="User" AttachStyle="Free">
+                    <Content>On the robot:
+B=right
+C=left</Content>
                 </Comment>
             </BlockDiagram>
             <Icon>
