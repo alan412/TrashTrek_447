@@ -81,7 +81,7 @@
                     </ConfigurableMethodCall>
                     <Wire Id="w13" Joints="N(n11:SequenceOut) N(n6:SequenceIn)" />
                     <Wire Id="w15" Joints="N(n11:Result) v(32) h(101) N(n6:speed)" />
-                    <ConfigurableMethodCall Id="n15" Bounds="148 128 163 91" Target="Arithmetic_Add\.vix">
+                    <ConfigurableMethodCall Id="n15" Bounds="148 128 163 91" Target="Arithmetic_Subtract\.vix">
                         <ConfigurableMethodTerminal ConfiguredValue="1">
                             <Terminal Id="X" Direction="Input" Wire="w20" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
                         </ConfigurableMethodTerminal>
@@ -94,7 +94,7 @@
                         <Terminal Id="SequenceIn" Direction="Input" Wire="w19" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
                         <Terminal Id="SequenceOut" Direction="Output" Wire="w17" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="145 33 18 18" />
                     </ConfigurableMethodCall>
-                    <Wire Id="w18" Joints="N(n15:Result) v(30) h(101) N(n17:valueIn) B(0) v(22) h(303) N(n11:X) B(0) v(12) h(202) N(n5:speed)" />
+                    <Wire Id="w18" Joints="N(n15:Result) v(12) h(202) N(n5:speed) B(0) v(22) h(303) N(n11:X) B(0) v(30) h(101) N(n17:valueIn)" />
                     <Wire Id="w14" Joints="N(n0:SequenceOut) N(n7:SequenceIn)" />
                     <Wire Id="w17" Joints="N(n15:SequenceOut) N(n17:SequenceIn)" />
                     <ConfigurableMethodCall Id="n7" Bounds="47 128 101 91" Target="X3\.Lib:GlobalGetSingle">
@@ -110,7 +110,7 @@
                     <Wire Id="w19" Joints="N(n7:SequenceOut) N(n15:SequenceIn)" />
                     <Wire Id="w20" Joints="N(n7:valueOut) v(22) h(101) N(n15:X)" />
                     <ConfigurableMethodCall Id="n17" Bounds="311 128 101 91" Target="X3\.Lib:GlobalSetSingle">
-                        <ConfigurableMethodTerminal ConfiguredValue="Wheel Circ">
+                        <ConfigurableMethodTerminal ConfiguredValue="Speed">
                             <Terminal Id="name" Direction="Input" DataType="String" Hotspot="0.5 1" Bounds="0 0 0 0" />
                         </ConfigurableMethodTerminal>
                         <ConfigurableMethodTerminal ConfiguredValue="0">
@@ -130,7 +130,7 @@
                     <ConfigurableMethodTerminal ConfiguredValue="Speed">
                         <Terminal Id="name" Direction="Input" DataType="String" Hotspot="0.5 1" Bounds="0 0 0 0" />
                     </ConfigurableMethodTerminal>
-                    <ConfigurableMethodTerminal ConfiguredValue="25">
+                    <ConfigurableMethodTerminal ConfiguredValue="32">
                         <Terminal Id="valueIn" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
                     </ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="0">

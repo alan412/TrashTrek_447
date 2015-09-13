@@ -122,7 +122,7 @@
                     <Terminal Id="SequenceIn" Direction="Input" Wire="w34" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
                     <Terminal Id="SequenceOut" Direction="Output" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="0 0 0 0" />
                 </PairedConfigurableMethodCall>
-                <Wire Id="w10" Joints="N(n9:Speed) v(38) h(999) N(n22:Y) B(0) v(177) h(1239) N(b23:n8)" />
+                <Wire Id="w10" Joints="N(n9:Speed) v(177) h(1239) N(b23:n8) B(0) v(38) h(999) N(n22:Y)" />
                 <Wire Id="w12" Joints="N(n9:Brake\?) v(114.5) h(1279) N(b26:n8)" />
                 <Wire Id="w14" Joints="N(n9:Turn\ Right\?) v(22) h(1038) N(n11:Boolean)" />
                 <Comment Bounds="-174 -145 223 129" SizeMode="User" AttachStyle="Free">
@@ -225,8 +225,8 @@
                 </Comment>
                 <Comment Bounds="455 -246 322 122" SizeMode="User" AttachStyle="Free">
                     <Content>On the robot:
-B=right
-C=left</Content>
+B=left
+C=right</Content>
                 </Comment>
             </BlockDiagram>
             <Icon>
