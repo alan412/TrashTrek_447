@@ -60,10 +60,6 @@
                 </SourceFileReference>
                 <DefinitionReference DocumentTypeIdentifier="NationalInstruments.ExternalFileSupport.Modeling.ExternalFileType" Name="reset\.ev3p\.mbxml" Bindings="Envoy,DefinitionReference,EmbeddedReference,ProjectItemDragDropDefaultService" />
                 <DefinitionReference DocumentTypeIdentifier="NationalInstruments.ExternalFileSupport.Modeling.ExternalFileType" Name="Big\ smile\.rgf" Bindings="Envoy,DefinitionReference,EmbeddedReference,ProjectItemDragDropDefaultService" />
-                <SourceFileReference StoragePath="TurnRightGyro.ev3p" RelativeStoragePath="TurnRightGyro.ev3p" OverridingDocumentTypeIdentifier="X3VIDocument" DocumentTypeIdentifier="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="TurnRightGyro\.ev3p" Bindings="Envoy,DefinitionReference,SourceFileReference,X3VIDocument">
-                    <X3DocumentSettings ShowFileOnStartup="False" IsTeacherOnlyFile="False" IsHiddenDependency="False" xmlns="http://www.ni.com/X3DocumentSettings.xsd" />
-                </SourceFileReference>
-                <DefinitionReference DocumentTypeIdentifier="NationalInstruments.ExternalFileSupport.Modeling.ExternalFileType" Name="TurnRightGyro\.ev3p\.mbxml" Bindings="Envoy,DefinitionReference,EmbeddedReference,ProjectItemDragDropDefaultService" />
                 <SourceFileReference StoragePath="ToLine_Dark.ev3p" RelativeStoragePath="ToLine_Dark.ev3p" OverridingDocumentTypeIdentifier="X3VIDocument" DocumentTypeIdentifier="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="ToLine_Dark\.ev3p" Bindings="Envoy,DefinitionReference,SourceFileReference,X3VIDocument">
                     <X3DocumentSettings ShowFileOnStartup="False" IsTeacherOnlyFile="False" IsHiddenDependency="False" xmlns="http://www.ni.com/X3DocumentSettings.xsd" />
                 </SourceFileReference>
@@ -84,8 +80,6 @@
                 <SourceFileReference StoragePath="Scrap_cars.ev3p" RelativeStoragePath="Scrap_cars.ev3p" OverridingDocumentTypeIdentifier="X3VIDocument" DocumentTypeIdentifier="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Scrap_cars\.ev3p" Bindings="Envoy,DefinitionReference,SourceFileReference,X3VIDocument">
                     <X3DocumentSettings ShowFileOnStartup="False" IsTeacherOnlyFile="False" IsHiddenDependency="False" xmlns="http://www.ni.com/X3DocumentSettings.xsd" />
                 </SourceFileReference>
-                <SourceFileReference StoragePath="TurnLeftGyro.ev3p" RelativeStoragePath="TurnLeftGyro.ev3p" OverridingDocumentTypeIdentifier="X3VIDocument" DocumentTypeIdentifier="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="TurnLeftGyro\.ev3p" Bindings="Envoy,DefinitionReference,SourceFileReference,X3VIDocument" />
-                <DefinitionReference DocumentTypeIdentifier="NationalInstruments.ExternalFileSupport.Modeling.ExternalFileType" Name="TurnLeftGyro\.ev3p\.mbxml" Bindings="Envoy,DefinitionReference,EmbeddedReference,ProjectItemDragDropDefaultService" />
                 <SourceFileReference StoragePath="bag and dudes.ev3p" RelativeStoragePath="bag and dudes.ev3p" OverridingDocumentTypeIdentifier="X3VIDocument" DocumentTypeIdentifier="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="bag\ and\ dudes\.ev3p" Bindings="Envoy,DefinitionReference,SourceFileReference,X3VIDocument">
                     <X3DocumentSettings ShowFileOnStartup="False" IsTeacherOnlyFile="False" IsHiddenDependency="False" xmlns="http://www.ni.com/X3DocumentSettings.xsd" />
                 </SourceFileReference>
@@ -94,6 +88,9 @@
                 </SourceFileReference>
                 <DefinitionReference DocumentTypeIdentifier="NationalInstruments.ExternalFileSupport.Modeling.ExternalFileType" Name="squareline_close_n\.ev3p\.mbxml" Bindings="Envoy,DefinitionReference,EmbeddedReference,ProjectItemDragDropDefaultService" />
                 <DefinitionReference DocumentTypeIdentifier="NationalInstruments.X3.App.X3FolderLoaderDefinition" Name="vi\.lib_PBR" Bindings="Envoy,DefinitionReference,EmbeddedReference" />
+                <SourceFileReference StoragePath="Test_Gyro.ev3p" RelativeStoragePath="Test_Gyro.ev3p" OverridingDocumentTypeIdentifier="X3VIDocument" DocumentTypeIdentifier="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Test_Gyro\.ev3p" Bindings="Envoy,DefinitionReference,SourceFileReference,X3VIDocument" />
+                <SourceFileReference StoragePath="turngyro.ev3p" RelativeStoragePath="turngyro.ev3p" OverridingDocumentTypeIdentifier="X3VIDocument" DocumentTypeIdentifier="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="turngyro\.ev3p" Bindings="Envoy,DefinitionReference,SourceFileReference,X3VIDocument" />
+                <DefinitionReference DocumentTypeIdentifier="NationalInstruments.ExternalFileSupport.Modeling.ExternalFileType" Name="turngyro\.ev3p\.mbxml" Bindings="Envoy,DefinitionReference,EmbeddedReference,ProjectItemDragDropDefaultService" />
             </Target>
             <ProjectSettings>
                 <NamedGlobalData xmlns="http://www.ni.com/X3NamedGlobalData.xsd">
@@ -215,12 +212,6 @@
             <StoragePath></StoragePath>
         </ExternalFile>
     </Namespace>
-    <Namespace Name="TurnRightGyro\.ev3p\.mbxml">
-        <ExternalFile xmlns="http://www.ni.com/ExternalFile.xsd">
-            <RelativeStoragePath>TurnRightGyro.ev3p.mbxml</RelativeStoragePath>
-            <StoragePath></StoragePath>
-        </ExternalFile>
-    </Namespace>
     <Namespace Name="ToLine_Dark\.ev3p\.mbxml">
         <ExternalFile xmlns="http://www.ni.com/ExternalFile.xsd">
             <RelativeStoragePath>ToLine_Dark.ev3p.mbxml</RelativeStoragePath>
@@ -230,12 +221,6 @@
     <Namespace Name="ToLine_Light\.ev3p\.mbxml">
         <ExternalFile xmlns="http://www.ni.com/ExternalFile.xsd">
             <RelativeStoragePath>ToLine_Light.ev3p.mbxml</RelativeStoragePath>
-            <StoragePath></StoragePath>
-        </ExternalFile>
-    </Namespace>
-    <Namespace Name="TurnLeftGyro\.ev3p\.mbxml">
-        <ExternalFile xmlns="http://www.ni.com/ExternalFile.xsd">
-            <RelativeStoragePath>TurnLeftGyro.ev3p.mbxml</RelativeStoragePath>
             <StoragePath></StoragePath>
         </ExternalFile>
     </Namespace>
@@ -251,5 +236,11 @@
             <Name>vi.lib_PBR</Name>
             <Location />
         </LoaderDefinition>
+    </Namespace>
+    <Namespace Name="turngyro\.ev3p\.mbxml">
+        <ExternalFile xmlns="http://www.ni.com/ExternalFile.xsd">
+            <RelativeStoragePath>turngyro.ev3p.mbxml</RelativeStoragePath>
+            <StoragePath />
+        </ExternalFile>
     </Namespace>
 </SourceFile>
