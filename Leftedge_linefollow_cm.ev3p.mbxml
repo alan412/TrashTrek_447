@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EditorDefinitions>
+  <PolyGroups>
+    <PolyGroup BlockFamily="My" IconBaseName="PolyGroup_051_ColorSensor">
+      <Block>
+        <Mode>MyBlock</Mode>
+        <Description />
+        <Reference Type="VILib" />
+        <PaletteInfo Weight="0.5" />
+        <ParamInfo Name="Sesor" DisplayName="Sesor" Direction="Input" Identification="Identification_501_MeasuredColor.png" DataType="Single" DefaultValue="4" />
+        <ParamInfo Name="Distance" DisplayName="Distance" Direction="Input" Identification="Identification_052_DistanceCM.png" DataType="Single" DefaultValue="10" />
+      </Block>
+    </PolyGroup>
+  </PolyGroups>
+</EditorDefinitions>
