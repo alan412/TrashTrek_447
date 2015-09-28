@@ -40,7 +40,7 @@
                 <Wire Id="w22" Joints="N(n20:SequenceOut) N(n22:SequenceIn)" />
                 <Wire Id="w11" Joints="N(n1:SequenceOut) N(n18:SequenceIn)" />
                 <ConfigurableMethodCall Id="n8" Bounds="524 -31 75 91" Target="GyroReset\.vix">
-                    <ConfigurableMethodTerminal ConfiguredValue="1.2">
+                    <ConfigurableMethodTerminal ConfiguredValue="1.1">
                         <Terminal Id="Port" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="0 0 0 0" />
                     </ConfigurableMethodTerminal>
                     <Terminal Id="SequenceIn" Direction="Input" Wire="w9" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
