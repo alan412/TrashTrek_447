@@ -29,7 +29,7 @@
                             <ConfigurableMethodTerminal>
                                 <Terminal Id="valueOut" Direction="Output" Wire="w7" DataType="String" Hotspot="0.5 1" Bounds="54 56 30 27" />
                             </ConfigurableMethodTerminal>
-                            <ConfigurableMethodTerminal ConfiguredValue="first">
+                            <ConfigurableMethodTerminal ConfiguredValue="PlaceBox">
                                 <Terminal Id="valueIn" Direction="Input" DataType="String" Hotspot="0.5 1" Bounds="0 0 0 0" />
                             </ConfigurableMethodTerminal>
                             <Terminal Id="SequenceIn" Direction="Input" Wire="w5" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
@@ -50,7 +50,7 @@
                             <ConfigurableMethodTerminal>
                                 <Terminal Id="valueOut" Direction="Output" Wire="w8" DataType="String" Hotspot="0.5 1" Bounds="54 56 30 27" />
                             </ConfigurableMethodTerminal>
-                            <ConfigurableMethodTerminal ConfiguredValue="second">
+                            <ConfigurableMethodTerminal ConfiguredValue="Demolition">
                                 <Terminal Id="valueIn" Direction="Input" DataType="String" Hotspot="0.5 1" Bounds="0 0 0 0" />
                             </ConfigurableMethodTerminal>
                             <Terminal Id="SequenceIn" Direction="Input" Wire="w6" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
@@ -71,7 +71,7 @@
                             <ConfigurableMethodTerminal>
                                 <Terminal Id="valueOut" Direction="Output" Wire="w7" DataType="String" Hotspot="0.5 1" Bounds="54 56 30 27" />
                             </ConfigurableMethodTerminal>
-                            <ConfigurableMethodTerminal ConfiguredValue="third">
+                            <ConfigurableMethodTerminal ConfiguredValue="GetBox">
                                 <Terminal Id="valueIn" Direction="Input" DataType="String" Hotspot="0.5 1" Bounds="0 0 0 0" />
                             </ConfigurableMethodTerminal>
                             <Terminal Id="SequenceIn" Direction="Input" Wire="w5" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
@@ -142,7 +142,7 @@
                     <Terminal Id="SequenceOut" Direction="Output" Wire="w15" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="176 33 18 18" />
                 </ConfigurableMethodCall>
                 <Wire Id="w15" Joints="N(n9:SequenceOut) v(8) N(n11:SequenceIn)" />
-                <Wire Id="w17" Joints="N(n8:whichdisplay) v(54) h(581) N(n9:A) B(0) v(22) h(251) N(n10:Number)" />
+                <Wire Id="w17" Joints="N(n8:whichdisplay) v(22) h(251) N(n10:Number) B(0) v(54) h(581) N(n9:A)" />
                 <Wire Id="w14" Joints="N(b11:n7) v(22) h(235) N(n9:C)" />
                 <Wire Id="w16" Joints="N(n9:Result) v(22) h(177) N(n11:Text)" />
             </BlockDiagram>

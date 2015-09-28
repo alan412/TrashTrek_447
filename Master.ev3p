@@ -69,7 +69,7 @@
                         <Terminal Id="SequenceIn" Direction="Input" Wire="w16" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
                         <Terminal Id="SequenceOut" Direction="Output" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="0 0 0 0" />
                     </PairedConfigurableMethodCall>
-                    <ConfigurableCaseStructure Id="n23" Bounds="322 97 531 176" DataType="Int32" UserSelectorBounds="0 0 0 0" Selected="D28" Default="D30" PairedConfigurableMethodCall="n28">
+                    <ConfigurableCaseStructure Id="n23" Bounds="322 97 531 176" DataType="Int32" UserSelectorBounds="0 0 0 0" Selected="D29" Default="D30" PairedConfigurableMethodCall="n28">
                         <Terminal Id="SequenceOut" Direction="Output" Wire="w26" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="513 79 18 18" />
                         <ConfigurableCaseStructure.Case Id="D27" Bounds="10 4 511 169" Pattern="3">
                             <SequenceNode Id="Output" Bounds="0 75 18 18">
