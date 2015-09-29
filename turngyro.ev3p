@@ -22,12 +22,6 @@
                 </StartBlock>
                 <ConfigurableMegaAccessor Id="n22" Bounds="-170 -41 173 91" Target="X3\.Lib:ConfigurableMegaAccessor" AccessorType="Input">
                     <ConfigurableMethodTerminal>
-                        <Terminal Id="right\?" Direction="Output" Wire="w18" DataType="Boolean" Hotspot="0.5 1" Bounds="103 56 30 27" />
-                    </ConfigurableMethodTerminal>
-                    <ConfigurableMethodTerminal>
-                        <Terminal Id="reset" Direction="Output" Wire="w16" DataType="Boolean" Hotspot="0.5 1" Bounds="134 56 30 27" />
-                    </ConfigurableMethodTerminal>
-                    <ConfigurableMethodTerminal>
                         <Terminal Id="degrees" Direction="Output" Wire="w24" DataType="Single" Hotspot="0.5 1" Bounds="10 56 30 27" />
                     </ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal>
@@ -35,6 +29,12 @@
                     </ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal>
                         <Terminal Id="proportional\ facator" Direction="Output" Wire="w20" DataType="Single" Hotspot="0.5 1" Bounds="72 56 30 27" />
+                    </ConfigurableMethodTerminal>
+                    <ConfigurableMethodTerminal>
+                        <Terminal Id="right\?" Direction="Output" Wire="w18" DataType="Boolean" Hotspot="0.5 1" Bounds="103 56 30 27" />
+                    </ConfigurableMethodTerminal>
+                    <ConfigurableMethodTerminal>
+                        <Terminal Id="reset" Direction="Output" Wire="w16" DataType="Boolean" Hotspot="0.5 1" Bounds="134 56 30 27" />
                     </ConfigurableMethodTerminal>
                 </ConfigurableMegaAccessor>
                 <Wire Id="w14" Joints="N(n1:SequenceOut) N(n18:SequenceIn)" />
@@ -82,7 +82,7 @@
                     <ConfigurableMethodTerminal ConfiguredValue="1.B+C">
                         <Terminal Id="Ports" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="0 0 0 0" />
                     </ConfigurableMethodTerminal>
-                    <ConfigurableMethodTerminal ConfiguredValue="True">
+                    <ConfigurableMethodTerminal ConfiguredValue="False">
                         <Terminal Id="Brake\ At\ End" Direction="Input" DataType="Boolean" Hotspot="0.5 1" Bounds="54 56 30 27" />
                     </ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="0">
@@ -272,7 +272,7 @@
                         <Terminal Id="SequenceOut" Direction="Output" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="0 0 0 0" />
                     </PairedConfigurableMethodCall>
                     <Wire Id="w33" Joints="N(n7:SequenceOut) N(n38:SequenceIn)" />
-                    <Wire Id="w44" Joints="N(b38:d0) v(-39) h(841) N(n52:Boolean) B(0) N(n38:Boolean)" />
+                    <Wire Id="w44" Joints="N(b38:d0) N(n38:Boolean) B(0) v(-39) h(841) N(n52:Boolean)" />
                     <Wire Id="w38" Joints="N(n31:SequenceOut) N(n10:SequenceIn)" />
                     <Wire Id="w45" Joints="N(n10:SequenceOut) N(n11:SequenceIn)" />
                     <Wire Id="w50" Joints="N(b39:d0) h(-1) N(n11:Y)" />
@@ -355,8 +355,8 @@
                     <Wire Id="w47" Joints="N(n30:SequenceOut) N(n18:SequenceIn)" />
                     <Wire Id="w48" Joints="N(n35:SequenceOut) h(-4) N(n31:SequenceIn)" />
                     <Wire Id="w49" Joints="N(n11:SequenceOut) h(0.5) v(-2) N(n52:SequenceIn)" />
-                    <Wire Id="w56" Joints="N(b35:n35) v(-1) h(146) N(n31:X) B(0) v(63) h(994) N(n30:X)" />
-                    <Wire Id="w58" Joints="N(n10:Output) v(127) h(446.578) N(b47:n49) B(0) v(21) h(101) N(n11:X)" />
+                    <Wire Id="w56" Joints="N(b35:n35) v(63) h(994) N(n30:X) B(0) v(-1) h(146) N(n31:X)" />
+                    <Wire Id="w58" Joints="N(n10:Output) v(21) h(101) N(n11:X) B(0) v(127) h(446.578) N(b47:n49)" />
                     <Comment Bounds="517 50 100 80" SizeMode="User" AttachStyle="Free">
                         <Content>gain factor</Content>
                     </Comment>
@@ -391,16 +391,16 @@
                         <fpruntime:EventContainer />
                     </fpruntime:EventProperties.Events>
                     <Model0:IconPanel.Background>
-                        <ation:LinearGradientBrush ation:StartPoint="0.5, 0" ation:EndPoint="0.5, 1">
-                            <ation:GradientStop ation:Color="#FFF6F5C6" />
-                            <ation:GradientStop ation:Color="#FFFFFFFE" ation:Offset="0.25" />
-                            <ation:GradientStop ation:Color="#FFF6F5C6" ation:Offset="1" />
+                        <ation:LinearGradientBrush StartPoint="0.5, 0" EndPoint="0.5, 1">
                             <ation:LinearGradientBrush.Transform>
                                 <ation:MatrixTransform />
                             </ation:LinearGradientBrush.Transform>
                             <ation:LinearGradientBrush.RelativeTransform>
                                 <ation:MatrixTransform />
                             </ation:LinearGradientBrush.RelativeTransform>
+                            <ation:GradientStop Color="#FFF6F5C6" />
+                            <ation:GradientStop Color="#FFFFFFFE" Offset="0.25" />
+                            <ation:GradientStop Color="#FFF6F5C6" Offset="1" />
                         </ation:LinearGradientBrush>
                     </Model0:IconPanel.Background>
                     <ation:Rectangle x:Name="Template" Width="NaN" Height="NaN" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="0, 13, 0, 0" ation:Grid.Row="0" ation:Grid.Column="0" ation:Grid.RowSpan="1" ation:Grid.ColumnSpan="1" Fill="#00FFFFFF" Stroke="#FF000000" StrokeThickness="1" RadiusX="0" RadiusY="0">
@@ -419,15 +419,15 @@
                             <fpruntime:EventContainer />
                         </fpruntime:EventProperties.Events>
                         <ation:Rectangle.Fill>
-                            <ation:LinearGradientBrush ation:StartPoint="0.5, 0" ation:EndPoint="0.5, 1">
-                                <ation:GradientStop ation:Color="#FFFFFFFF" />
-                                <ation:GradientStop ation:Color="#FFD5EAEA" ation:Offset="1" />
+                            <ation:LinearGradientBrush StartPoint="0.5, 0" EndPoint="0.5, 1">
                                 <ation:LinearGradientBrush.Transform>
                                     <ation:MatrixTransform />
                                 </ation:LinearGradientBrush.Transform>
                                 <ation:LinearGradientBrush.RelativeTransform>
                                     <ation:MatrixTransform />
                                 </ation:LinearGradientBrush.RelativeTransform>
+                                <ation:GradientStop Color="#FFFFFFFF" />
+                                <ation:GradientStop Color="#FFD5EAEA" Offset="1" />
                             </ation:LinearGradientBrush>
                         </ation:Rectangle.Fill>
                     </ation:Rectangle>
