@@ -98,7 +98,7 @@
                     </ConfigurableMethodCall>
                     <Wire Id="w10" Joints="N(n6:SequenceOut) N(n8:SequenceIn)" />
                     <Wire Id="w11" Joints="N(n8:SequenceOut) N(n10:SequenceIn)" />
-                    <Wire Id="w13" Joints="N(n7:Angle) v(20) h(101) N(n6:x) B(0) v(28) h(264) N(n8:x)" />
+                    <Wire Id="w13" Joints="N(n7:Angle) v(28) h(264) N(n8:x) B(0) v(20) h(101) N(n6:x)" />
                     <Wire Id="w14" Joints="N(n8:Result) v(22) h(101) N(n10:A)" />
                     <Wire Id="w15" Joints="N(n6:Result) v(38) h(295) N(n10:B)" />
                     <Wire Id="w16" Joints="N(n10:Result) v(22) h(101) N(n1:Do\ Stop)" />
@@ -132,13 +132,13 @@ until reset</Content>
                     <ConfigurableMethodTerminal ConfiguredValue="A5">
                         <Terminal Id="Note" Direction="Input" DataType="String" Hotspot="0.5 1" Bounds="54 56 30 27" />
                     </ConfigurableMethodTerminal>
-                    <ConfigurableMethodTerminal ConfiguredValue="1">
+                    <ConfigurableMethodTerminal ConfiguredValue="0.2">
                         <Terminal Id="Duration" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="85 56 30 27" />
                     </ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="100">
                         <Terminal Id="Volume" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="116 56 30 27" />
                     </ConfigurableMethodTerminal>
-                    <ConfigurableMethodTerminal ConfiguredValue="0">
+                    <ConfigurableMethodTerminal ConfiguredValue="1">
                         <Terminal Id="Play\ Type" Direction="Input" DataType="UInt16" Hotspot="0.5 1" Bounds="147 56 30 27" />
                     </ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="0">
