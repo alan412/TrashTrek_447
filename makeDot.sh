@@ -1,0 +1,1 @@
+python makeDotGraph.py | dot -Tsvg > DotGraph.svg
