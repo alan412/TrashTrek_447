@@ -48,7 +48,7 @@
                 <Wire Id="w7" Joints="N(n9:A) v(91) h(502) N(b12:n13) B(0) v(22) h(282) N(n6:x)" />
                 <Wire Id="w8" Joints="N(n9:B) v(127) h(545) N(b16:n13) B(0) v(30) h(282) N(n6:y)" />
                 <Wire Id="w12" Joints="N(n6:SequenceOut) N(n16:SequenceIn)" />
-                <ConfigurableCaseStructure Id="n13" Bounds="1153 62 237 173" DataType="Boolean" UserSelectorBounds="0 0 0 0" Selected="D14" Default="D14" PairedConfigurableMethodCall="n16">
+                <ConfigurableCaseStructure Id="n13" Bounds="1153 62 237 173" DataType="Boolean" UserSelectorBounds="0 0 0 0" Selected="D15" Default="D14" PairedConfigurableMethodCall="n16">
                     <Terminal Id="SequenceOut" Direction="Output" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="219 76 18 18" />
                     <ConfigurableCaseStructure.Case Id="D14" Bounds="10 4 217 166" Pattern="True">
                         <SequenceNode Id="Output" Bounds="0 72 18 18">
@@ -58,7 +58,7 @@
                             <Terminal Id="SequenceTerminal" Direction="Input" Wire="w3" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 0 18 18" />
                         </SequenceNode>
                         <Wire Id="w3" Joints="N(Output:SequenceTerminal) N(Input:SequenceTerminal)" />
-                        <Wire Id="w5" Joints="N(b12:D14) v(-4.5) h(193) v(4.5) N(b13:D14)" />
+                        <Wire Id="w7" Joints="N(b12:D14) v(-14) h(149) N(b13:D14)" />
                     </ConfigurableCaseStructure.Case>
                     <ConfigurableCaseStructure.Case Id="D15" Bounds="10 4 217 166" Pattern="False">
                         <SequenceNode Id="Output" Bounds="0 72 18 18">
@@ -68,10 +68,10 @@
                             <Terminal Id="SequenceTerminal" Direction="Input" Wire="w3" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 0 18 18" />
                         </SequenceNode>
                         <Wire Id="w3" Joints="N(Output:SequenceTerminal) N(Input:SequenceTerminal)" />
-                        <Wire Id="w7" Joints="N(b16:D15) v(-7) h(75) N(b13:D15)" />
+                        <Wire Id="w7" Joints="N(b16:D15) v(-14) h(75) N(b13:D15)" />
                     </ConfigurableCaseStructure.Case>
-                    <ConfigurableCaseStructure.ConfigurableCaseTunnel Id="b12" Terminals="n13=w7, D14=w5, D15" Bounds="26 140 30 63" />
-                    <ConfigurableCaseStructure.ConfigurableCaseTunnel Id="b13" Terminals="n13=w15, D14=w5, D15=w7" Bounds="175 140 30 63" />
+                    <ConfigurableCaseStructure.ConfigurableCaseTunnel Id="b12" Terminals="n13=w7, D14=w7, D15" Bounds="26 140 30 63" />
+                    <ConfigurableCaseStructure.ConfigurableCaseTunnel Id="b13" Terminals="n13=w15, D14=w7, D15=w7" Bounds="175 140 30 63" />
                     <ConfigurableCaseStructure.ConfigurableCaseTunnel Id="b16" Terminals="n13=w8, D14, D15=w7" Bounds="100 140 30 63" />
                 </ConfigurableCaseStructure>
                 <PairedConfigurableMethodCall Id="n16" Bounds="1068 105 85 91" Target="CaseSelector_Boolean\.vix" PairedStructure="n13">
