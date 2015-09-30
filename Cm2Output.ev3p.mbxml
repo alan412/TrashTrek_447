@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EditorDefinitions>
+  <PolyGroups>
+    <PolyGroup BlockFamily="My" IconBaseName="PolyGroup_000_MyBlockRed">
+      <Block>
+        <Mode>MyBlock</Mode>
+        <Description />
+        <Reference Type="VILib" />
+        <PaletteInfo Weight="0.5" />
+        <ParamInfo Name="Centimeters" DisplayName="Centimeters" Direction="Input" Identification="Identification_052_DistanceCM.png" DataType="Single" DefaultValue="10" />
+        <ParamInfo Name="Rotations" DisplayName="Rotations" Direction="Output" Identification="Identification_278_MotorRotation.png" DataType="Single" />
+        <ParamInfo Name="degrees" DisplayName="degrees" Direction="Output" Identification="Identification_037_NumberOfDecimals.png" DataType="Single" />
+      </Block>
+    </PolyGroup>
+  </PolyGroups>
+</EditorDefinitions>
