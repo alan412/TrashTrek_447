@@ -162,7 +162,7 @@
                 <Wire Id="w15" Joints="N(n9:SequenceOut) N(n30:SequenceIn)" />
                 <Wire Id="w10" Joints="N(n6:valueOut) v(22) h(132) N(n9:Y)" />
                 <Wire Id="w9" Joints="N(n6:SequenceOut) N(n9:SequenceIn)" />
-                <ConfigurableMethodCall Id="n16" Bounds="2370 0 75 91" Target="RotationReset\.vix">
+                <ConfigurableMethodCall Id="n16" Bounds="2382 0 75 91" Target="RotationReset\.vix">
                     <ConfigurableMethodTerminal ConfiguredValue="1.B">
                         <Terminal Id="MotorPort" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="0 0 0 0" />
                     </ConfigurableMethodTerminal>
@@ -186,6 +186,12 @@
                 <Wire Id="w19" Joints="N(n30:SequenceOut) N(n18:SequenceIn)" />
                 <ConfigurableMegaAccessor Id="n27" Bounds="1725 0 204 91" Target="X3\.Lib:ConfigurableMegaAccessor" AccessorType="Input">
                     <ConfigurableMethodTerminal>
+                        <Terminal Id="Distance" Direction="Output" Wire="w20" DataType="Single" Hotspot="0.5 1" Bounds="10 56 30 27" />
+                    </ConfigurableMethodTerminal>
+                    <ConfigurableMethodTerminal>
+                        <Terminal Id="SensorPort" Direction="Output" Wire="w21" DataType="Single" Hotspot="0.5 1" Bounds="103 56 30 27" />
+                    </ConfigurableMethodTerminal>
+                    <ConfigurableMethodTerminal>
                         <Terminal Id="Speed" Direction="Output" Wire="w25" DataType="Single" Hotspot="0.5 1" Bounds="41 56 30 27" />
                     </ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal>
@@ -197,57 +203,51 @@
                     <ConfigurableMethodTerminal>
                         <Terminal Id="Brake\?" Direction="Output" Wire="w22" DataType="Boolean" Hotspot="0.5 1" Bounds="165 56 30 27" />
                     </ConfigurableMethodTerminal>
-                    <ConfigurableMethodTerminal>
-                        <Terminal Id="Distance" Direction="Output" Wire="w20" DataType="Single" Hotspot="0.5 1" Bounds="10 56 30 27" />
-                    </ConfigurableMethodTerminal>
-                    <ConfigurableMethodTerminal>
-                        <Terminal Id="SensorPort" Direction="Output" Wire="w21" DataType="Single" Hotspot="0.5 1" Bounds="103 56 30 27" />
-                    </ConfigurableMethodTerminal>
                 </ConfigurableMegaAccessor>
                 <Wire Id="w20" Joints="N(n27:Distance) v(30) h(865) N(n9:X)" />
                 <Wire Id="w21" Joints="N(n27:SensorPort) v(213) h(976) N(b12:n30)" />
                 <Wire Id="w22" Joints="N(n27:Brake\?) v(157) h(1660) N(n18:Brake\ At\ End)" />
                 <Wire Id="w25" Joints="N(n27:Speed) v(273) h(1549) N(b23:n30)" />
                 <Wire Id="w29" Joints="N(n31:SequenceOut) N(n16:SequenceIn)" />
-                <ConfigurableCaseStructure Id="n31" Bounds="2126 -46 228 186" DataType="Boolean" UserSelectorBounds="0 0 0 0" Selected="D32" Default="D31" PairedConfigurableMethodCall="n33">
-                    <Terminal Id="SequenceOut" Direction="Output" Wire="w29" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="210 79 18 18" />
-                    <ConfigurableCaseStructure.Case Id="D31" Bounds="10 4 208 179" Pattern="True">
+                <ConfigurableCaseStructure Id="n31" Bounds="2126 -46 256 186" DataType="Boolean" UserSelectorBounds="0 0 0 0" Selected="D32" Default="D31" PairedConfigurableMethodCall="n33">
+                    <Terminal Id="SequenceOut" Direction="Output" Wire="w29" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="238 79 18 18" />
+                    <ConfigurableCaseStructure.Case Id="D31" Bounds="10 4 236 179" Pattern="True">
                         <SequenceNode Id="Output" Bounds="0 75 18 18">
-                            <Terminal Id="SequenceTerminal" Direction="Output" Wire="w3" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="0 0 18 18" />
+                            <Terminal Id="SequenceTerminal" Direction="Output" Wire="w7" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="0 0 18 18" />
                         </SequenceNode>
-                        <SequenceNode Id="Input" Bounds="181 75 18 18">
-                            <Terminal Id="SequenceTerminal" Direction="Input" Wire="w3" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 0 18 18" />
-                        </SequenceNode>
-                        <Wire Id="w3" Joints="N(Output:SequenceTerminal) N(Input:SequenceTerminal)" />
-                        <Wire Id="w6" Joints="N(b29:D31) v(-14) h(62) N(b30:D31)" />
-                    </ConfigurableCaseStructure.Case>
-                    <ConfigurableCaseStructure.Case Id="D32" Bounds="10 4 208 179" Pattern="False">
-                        <SequenceNode Id="Output" Bounds="0 75 18 18">
-                            <Terminal Id="SequenceTerminal" Direction="Output" Wire="w4" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="0 0 18 18" />
-                        </SequenceNode>
-                        <SequenceNode Id="Input" Bounds="181 75 18 18">
-                            <Terminal Id="SequenceTerminal" Direction="Input" Wire="w5" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 0 18 18" />
+                        <SequenceNode Id="Input" Bounds="209 75 18 18">
+                            <Terminal Id="SequenceTerminal" Direction="Input" Wire="w8" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 0 18 18" />
                         </SequenceNode>
                         <ConfigurableMethodCall Id="n32" Bounds="18 42 163 91" Target="Arithmetic_Multiply\.vix">
                             <ConfigurableMethodTerminal ConfiguredValue="1">
-                                <Terminal Id="X" Direction="Input" Wire="w7" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
+                                <Terminal Id="X" Direction="Input" Wire="w10" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
                             </ConfigurableMethodTerminal>
                             <ConfigurableMethodTerminal ConfiguredValue="-1">
                                 <Terminal Id="Y" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="85 56 30 27" />
                             </ConfigurableMethodTerminal>
                             <ConfigurableMethodTerminal>
-                                <Terminal Id="Result" Direction="Output" Wire="w8" DataType="Single" Hotspot="0.5 1" Bounds="116 56 30 27" />
+                                <Terminal Id="Result" Direction="Output" Wire="w9" DataType="Single" Hotspot="0.5 1" Bounds="116 56 30 27" />
                             </ConfigurableMethodTerminal>
-                            <Terminal Id="SequenceIn" Direction="Input" Wire="w4" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
-                            <Terminal Id="SequenceOut" Direction="Output" Wire="w5" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="145 33 18 18" />
+                            <Terminal Id="SequenceIn" Direction="Input" Wire="w7" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
+                            <Terminal Id="SequenceOut" Direction="Output" Wire="w8" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="145 33 18 18" />
                         </ConfigurableMethodCall>
-                        <Wire Id="w4" Joints="N(Output:SequenceTerminal) N(n32:SequenceIn)" />
-                        <Wire Id="w5" Joints="N(n32:SequenceOut) N(Input:SequenceTerminal)" />
-                        <Wire Id="w7" Joints="N(b29:D32) N(n32:X)" />
-                        <Wire Id="w8" Joints="N(n32:Result) N(b30:D32)" />
+                        <Wire Id="w7" Joints="N(Output:SequenceTerminal) N(n32:SequenceIn)" />
+                        <Wire Id="w8" Joints="N(n32:SequenceOut) N(Input:SequenceTerminal)" />
+                        <Wire Id="w9" Joints="N(n32:Result) N(b30:D31)" />
+                        <Wire Id="w10" Joints="N(b29:D31) N(n32:X)" />
                     </ConfigurableCaseStructure.Case>
-                    <ConfigurableCaseStructure.ConfigurableCaseTunnel Id="b29" Terminals="n31=w32, D31=w6, D32=w7" Bounds="82 153 30 63" />
-                    <ConfigurableCaseStructure.ConfigurableCaseTunnel Id="b30" Terminals="n31=w33, D31=w6, D32=w8" Bounds="144 153 30 63" />
+                    <ConfigurableCaseStructure.Case Id="D32" Bounds="10 4 236 179" Pattern="False">
+                        <SequenceNode Id="Output" Bounds="0 75 18 18">
+                            <Terminal Id="SequenceTerminal" Direction="Output" Wire="w9" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="0 0 18 18" />
+                        </SequenceNode>
+                        <SequenceNode Id="Input" Bounds="209 75 18 18">
+                            <Terminal Id="SequenceTerminal" Direction="Input" Wire="w9" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 0 18 18" />
+                        </SequenceNode>
+                        <Wire Id="w9" Joints="N(Output:SequenceTerminal) N(Input:SequenceTerminal)" />
+                        <Wire Id="w6" Joints="N(b29:D32) v(-14) h(62) N(b30:D32)" />
+                    </ConfigurableCaseStructure.Case>
+                    <ConfigurableCaseStructure.ConfigurableCaseTunnel Id="b29" Terminals="n31=w32, D31=w10, D32=w6" Bounds="82 153 30 63" />
+                    <ConfigurableCaseStructure.ConfigurableCaseTunnel Id="b30" Terminals="n31=w33, D31=w9, D32=w6" Bounds="144 153 30 63" />
                 </ConfigurableCaseStructure>
                 <PairedConfigurableMethodCall Id="n33" Bounds="2041 0 85 91" Target="CaseSelector_Boolean\.vix" PairedStructure="n31">
                     <ConfigurableMethodTerminal ConfiguredValue="False">
@@ -279,16 +279,16 @@
                         <fpruntime:EventContainer />
                     </fpruntime:EventProperties.Events>
                     <Model0:IconPanel.Background>
-                        <ation:LinearGradientBrush ation:StartPoint="0.5, 0" ation:EndPoint="0.5, 1">
-                            <ation:GradientStop ation:Color="#FFF6F5C6" />
-                            <ation:GradientStop ation:Color="#FFFFFFFE" ation:Offset="0.25" />
-                            <ation:GradientStop ation:Color="#FFF6F5C6" ation:Offset="1" />
+                        <ation:LinearGradientBrush StartPoint="0.5, 0" EndPoint="0.5, 1">
                             <ation:LinearGradientBrush.Transform>
                                 <ation:MatrixTransform />
                             </ation:LinearGradientBrush.Transform>
                             <ation:LinearGradientBrush.RelativeTransform>
                                 <ation:MatrixTransform />
                             </ation:LinearGradientBrush.RelativeTransform>
+                            <ation:GradientStop Color="#FFF6F5C6" />
+                            <ation:GradientStop Color="#FFFFFFFE" Offset="0.25" />
+                            <ation:GradientStop Color="#FFF6F5C6" Offset="1" />
                         </ation:LinearGradientBrush>
                     </Model0:IconPanel.Background>
                     <ation:Rectangle x:Name="Template" Width="NaN" Height="NaN" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="0, 13, 0, 0" ation:Grid.Row="0" ation:Grid.Column="0" ation:Grid.RowSpan="1" ation:Grid.ColumnSpan="1" Fill="#00FFFFFF" Stroke="#FF000000" StrokeThickness="1" RadiusX="0" RadiusY="0">
@@ -307,15 +307,15 @@
                             <fpruntime:EventContainer />
                         </fpruntime:EventProperties.Events>
                         <ation:Rectangle.Fill>
-                            <ation:LinearGradientBrush ation:StartPoint="0.5, 0" ation:EndPoint="0.5, 1">
-                                <ation:GradientStop ation:Color="#FFFFFFFF" />
-                                <ation:GradientStop ation:Color="#FFD5EAEA" ation:Offset="1" />
+                            <ation:LinearGradientBrush StartPoint="0.5, 0" EndPoint="0.5, 1">
                                 <ation:LinearGradientBrush.Transform>
                                     <ation:MatrixTransform />
                                 </ation:LinearGradientBrush.Transform>
                                 <ation:LinearGradientBrush.RelativeTransform>
                                     <ation:MatrixTransform />
                                 </ation:LinearGradientBrush.RelativeTransform>
+                                <ation:GradientStop Color="#FFFFFFFF" />
+                                <ation:GradientStop Color="#FFD5EAEA" Offset="1" />
                             </ation:LinearGradientBrush>
                         </ation:Rectangle.Fill>
                     </ation:Rectangle>
