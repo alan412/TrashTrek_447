@@ -77,7 +77,7 @@
                         <Terminal Id="SequenceOut" Direction="Output" Wire="w7" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="207 33 18 18" />
                     </ConfigurableMethodCall>
                     <Wire Id="w4" Joints="N(n0:SequenceOut) N(n7:SequenceIn)" />
-                    <ConfigurableMethodCall Id="n7" Bounds="47 41 163 91" Target="Drive_CM\.ev3p">
+                    <ConfigurableMethodCall Id="n7" Bounds="47 41 163 91" Target="OLD_Drive_CM\.ev3p">
                         <ConfigurableMethodTerminal ConfiguredValue="0">
                             <Terminal Id="InterruptsToListenFor_16B03592_CD76_4D58_8DC3_E3C3091E327A" Direction="Input" DataType="Int32" Hotspot="0.5 1" Bounds="0 0 0 0" />
                         </ConfigurableMethodTerminal>
