@@ -157,7 +157,7 @@
                         <Content>measures the rotations of b</Content>
                     </Comment>
                     <Comment Bounds="554 27 100 80" SizeMode="User" AttachStyle="Free">
-                        <Content> makes sure it isn't negitive</Content>
+                        <Content> makes sure it isn't negative</Content>
                     </Comment>
                     <Comment Bounds="700 19 212 80" SizeMode="User" AttachStyle="Free">
                         <Content>compares to how far you want to go to how far it has gone</Content>
@@ -223,16 +223,16 @@
                         <fpruntime:EventContainer />
                     </fpruntime:EventProperties.Events>
                     <Model0:IconPanel.Background>
-                        <ation:LinearGradientBrush ation:StartPoint="0.5, 0" ation:EndPoint="0.5, 1">
-                            <ation:GradientStop ation:Color="#FFF6F5C6" />
-                            <ation:GradientStop ation:Color="#FFFFFFFE" ation:Offset="0.25" />
-                            <ation:GradientStop ation:Color="#FFF6F5C6" ation:Offset="1" />
+                        <ation:LinearGradientBrush StartPoint="0.5, 0" EndPoint="0.5, 1">
                             <ation:LinearGradientBrush.Transform>
                                 <ation:MatrixTransform />
                             </ation:LinearGradientBrush.Transform>
                             <ation:LinearGradientBrush.RelativeTransform>
                                 <ation:MatrixTransform />
                             </ation:LinearGradientBrush.RelativeTransform>
+                            <ation:GradientStop Color="#FFF6F5C6" />
+                            <ation:GradientStop Color="#FFFFFFFE" Offset="0.25" />
+                            <ation:GradientStop Color="#FFF6F5C6" Offset="1" />
                         </ation:LinearGradientBrush>
                     </Model0:IconPanel.Background>
                     <ation:Rectangle x:Name="Template" Width="NaN" Height="NaN" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="0, 13, 0, 0" ation:Grid.Row="0" ation:Grid.Column="0" ation:Grid.RowSpan="1" ation:Grid.ColumnSpan="1" Fill="#00FFFFFF" Stroke="#FF000000" StrokeThickness="1" RadiusX="0" RadiusY="0">
@@ -251,15 +251,15 @@
                             <fpruntime:EventContainer />
                         </fpruntime:EventProperties.Events>
                         <ation:Rectangle.Fill>
-                            <ation:LinearGradientBrush ation:StartPoint="0.5, 0" ation:EndPoint="0.5, 1">
-                                <ation:GradientStop ation:Color="#FFFFFFFF" />
-                                <ation:GradientStop ation:Color="#FFD5EAEA" ation:Offset="1" />
+                            <ation:LinearGradientBrush StartPoint="0.5, 0" EndPoint="0.5, 1">
                                 <ation:LinearGradientBrush.Transform>
                                     <ation:MatrixTransform />
                                 </ation:LinearGradientBrush.Transform>
                                 <ation:LinearGradientBrush.RelativeTransform>
                                     <ation:MatrixTransform />
                                 </ation:LinearGradientBrush.RelativeTransform>
+                                <ation:GradientStop Color="#FFFFFFFF" />
+                                <ation:GradientStop Color="#FFD5EAEA" Offset="1" />
                             </ation:LinearGradientBrush>
                         </ation:Rectangle.Fill>
                     </ation:Rectangle>
