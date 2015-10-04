@@ -36,7 +36,7 @@
                     <Terminal Id="SequenceIn" Direction="Input" Wire="w12" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
                     <Terminal Id="SequenceOut" Direction="Output" Wire="w9" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="114 33 18 18" />
                 </ConfigurableMethodCall>
-                <ConfigurableMethodCall Id="n10" Bounds="965 0 101 91" Target="MoveTankStop\.vix">
+                <ConfigurableMethodCall Id="n10" Bounds="1159 0 101 91" Target="MoveTankStop\.vix">
                     <ConfigurableMethodTerminal ConfiguredValue="1.B+C">
                         <Terminal Id="Ports" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="0 0 0 0" />
                     </ConfigurableMethodTerminal>
@@ -46,12 +46,12 @@
                     <ConfigurableMethodTerminal ConfiguredValue="0">
                         <Terminal Id="InterruptsToListenFor_16B03592_CD76_4D58_8DC3_E3C3091E327A" Direction="Input" DataType="Int32" Hotspot="0.5 1" Bounds="0 0 0 0" />
                     </ConfigurableMethodTerminal>
-                    <Terminal Id="SequenceIn" Direction="Input" Wire="w10" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
+                    <Terminal Id="SequenceIn" Direction="Input" Wire="w17" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
                     <Terminal Id="SequenceOut" Direction="Output" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="83 33 18 18" />
                 </ConfigurableMethodCall>
-                <ConfigurableWaitFor Id="n8" Bounds="771 0 194 91" Target="ColorReflectedIntensityCompare\.vix">
+                <ConfigurableWaitFor Id="n8" Bounds="965 0 194 91" Target="ColorReflectedIntensityCompare\.vix">
                     <ConfigurableMethodTerminal ConfiguredValue="1.Wired_1FAC2752-7229-46A0-AA06-E0731CAB9CAF">
-                        <Terminal Id="Port" Direction="Input" Wire="w11" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
+                        <Terminal Id="Port" Direction="Input" Wire="w20" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
                     </ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="5">
                         <Terminal Id="Comparison" Direction="Input" DataType="Int32" Hotspot="0.5 1" Bounds="85 56 30 27" />
@@ -68,11 +68,10 @@
                     <ConfigurableMethodTerminal>
                         <Terminal Id="Value" Direction="Output" DataType="Single" Hotspot="0.5 1" Bounds="147 56 30 27" />
                     </ConfigurableMethodTerminal>
-                    <Terminal Id="SequenceIn" Direction="Input" Wire="w9" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
-                    <Terminal Id="SequenceOut" Direction="Output" Wire="w10" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="176 33 18 18" />
+                    <Terminal Id="SequenceIn" Direction="Input" Wire="w18" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
+                    <Terminal Id="SequenceOut" Direction="Output" Wire="w17" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="176 33 18 18" />
                 </ConfigurableWaitFor>
-                <Wire Id="w9" Joints="N(n6:SequenceOut) N(n8:SequenceIn)" />
-                <Wire Id="w10" Joints="N(n8:SequenceOut) N(n10:SequenceIn)" />
+                <Wire Id="w9" Joints="N(n6:SequenceOut) N(n14:SequenceIn)" />
                 <Wire Id="w12" Joints="N(n1:SequenceOut) N(n6:SequenceIn)" />
                 <ConfigurableMegaAccessor Id="n16" Bounds="308 0 173 91" Target="X3\.Lib:ConfigurableMegaAccessor" AccessorType="Input">
                     <ConfigurableMethodTerminal>
@@ -88,14 +87,36 @@
                         <Terminal Id="DarkValue" Direction="Output" Wire="w16" DataType="Single" Hotspot="0.5 1" Bounds="103 56 30 27" />
                     </ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal>
-                        <Terminal Id="SensorPort" Direction="Output" Wire="w11" DataType="Single" Hotspot="0.5 1" Bounds="134 56 30 27" />
+                        <Terminal Id="SensorPort" Direction="Output" Wire="w19" DataType="Single" Hotspot="0.5 1" Bounds="134 56 30 27" />
                     </ConfigurableMethodTerminal>
                 </ConfigurableMegaAccessor>
-                <Wire Id="w11" Joints="N(n16:SensorPort) v(22) h(383) N(n8:Port)" />
                 <Wire Id="w13" Joints="N(n16:LeftSpeed) v(30) h(375) N(n6:Speed\ Left)" />
                 <Wire Id="w14" Joints="N(n16:RightSpeed) v(38) h(375) N(n6:Speed\ Right)" />
-                <Wire Id="w15" Joints="N(n16:Brake\?) v(46) h(639) N(n10:Brake\ At\ End)" />
-                <Wire Id="w16" Joints="N(n16:DarkValue) v(54) h(476) N(n8:Threshold)" />
+                <Wire Id="w15" Joints="N(n16:Brake\?) v(46) h(833) N(n10:Brake\ At\ End)" />
+                <Wire Id="w16" Joints="N(n16:DarkValue) v(54) h(670) N(n8:Threshold)" />
+                <ConfigurableMethodCall Id="n14" Bounds="771 0 194 91" Target="Limit_Range\.ev3p">
+                    <ConfigurableMethodTerminal ConfiguredValue="0">
+                        <Terminal Id="InterruptsToListenFor_16B03592_CD76_4D58_8DC3_E3C3091E327A" Direction="Input" DataType="Int32" Hotspot="0.5 1" Bounds="0 0 0 0" />
+                    </ConfigurableMethodTerminal>
+                    <ConfigurableMethodTerminal ConfiguredValue="1">
+                        <Terminal Id="Min" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
+                    </ConfigurableMethodTerminal>
+                    <ConfigurableMethodTerminal ConfiguredValue="4">
+                        <Terminal Id="Max" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="85 56 30 27" />
+                    </ConfigurableMethodTerminal>
+                    <ConfigurableMethodTerminal ConfiguredValue="0">
+                        <Terminal Id="X" Direction="Input" Wire="w19" DataType="Single" Hotspot="0.5 1" Bounds="116 56 30 27" />
+                    </ConfigurableMethodTerminal>
+                    <ConfigurableMethodTerminal>
+                        <Terminal Id="Output" Direction="Output" Wire="w20" DataType="Single" Hotspot="0.5 1" Bounds="147 56 30 27" />
+                    </ConfigurableMethodTerminal>
+                    <Terminal Id="SequenceIn" Direction="Input" Wire="w9" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
+                    <Terminal Id="SequenceOut" Direction="Output" Wire="w18" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="176 33 18 18" />
+                </ConfigurableMethodCall>
+                <Wire Id="w17" Joints="N(n8:SequenceOut) N(n10:SequenceIn)" />
+                <Wire Id="w18" Joints="N(n14:SequenceOut) N(n8:SequenceIn)" />
+                <Wire Id="w19" Joints="N(n16:SensorPort) v(22) h(445) N(n14:X)" />
+                <Wire Id="w20" Joints="N(n14:Output) v(22) h(101) N(n8:Port)" />
             </BlockDiagram>
             <Icon>
                 <Model0:IconPanel xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:Model0="clr-namespace:NationalInstruments.LabVIEW.VI.Design;assembly=NationalInstruments.LabVIEW.VI.SourceModel" xmlns:fpruntime="clr-namespace:NationalInstruments.LabVIEW.FrontPanelRuntime;assembly=NationalInstruments.LabVIEW.FrontPanelRuntime" xmlns:ation="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Height="98" Width="56">
@@ -106,16 +127,16 @@
                         <fpruntime:EventContainer />
                     </fpruntime:EventProperties.Events>
                     <Model0:IconPanel.Background>
-                        <ation:LinearGradientBrush ation:StartPoint="0.5, 0" ation:EndPoint="0.5, 1">
-                            <ation:GradientStop ation:Color="#FFF6F5C6" />
-                            <ation:GradientStop ation:Color="#FFFFFFFE" ation:Offset="0.25" />
-                            <ation:GradientStop ation:Color="#FFF6F5C6" ation:Offset="1" />
+                        <ation:LinearGradientBrush StartPoint="0.5, 0" EndPoint="0.5, 1">
                             <ation:LinearGradientBrush.Transform>
                                 <ation:MatrixTransform />
                             </ation:LinearGradientBrush.Transform>
                             <ation:LinearGradientBrush.RelativeTransform>
                                 <ation:MatrixTransform />
                             </ation:LinearGradientBrush.RelativeTransform>
+                            <ation:GradientStop Color="#FFF6F5C6" />
+                            <ation:GradientStop Color="#FFFFFFFE" Offset="0.25" />
+                            <ation:GradientStop Color="#FFF6F5C6" Offset="1" />
                         </ation:LinearGradientBrush>
                     </Model0:IconPanel.Background>
                     <ation:Rectangle x:Name="Template" Width="NaN" Height="NaN" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="0, 13, 0, 0" ation:Grid.Row="0" ation:Grid.Column="0" ation:Grid.RowSpan="1" ation:Grid.ColumnSpan="1" Fill="#00FFFFFF" Stroke="#FF000000" StrokeThickness="1" RadiusX="0" RadiusY="0">
@@ -134,15 +155,15 @@
                             <fpruntime:EventContainer />
                         </fpruntime:EventProperties.Events>
                         <ation:Rectangle.Fill>
-                            <ation:LinearGradientBrush ation:StartPoint="0.5, 0" ation:EndPoint="0.5, 1">
-                                <ation:GradientStop ation:Color="#FFFFFFFF" />
-                                <ation:GradientStop ation:Color="#FFD5EAEA" ation:Offset="1" />
+                            <ation:LinearGradientBrush StartPoint="0.5, 0" EndPoint="0.5, 1">
                                 <ation:LinearGradientBrush.Transform>
                                     <ation:MatrixTransform />
                                 </ation:LinearGradientBrush.Transform>
                                 <ation:LinearGradientBrush.RelativeTransform>
                                     <ation:MatrixTransform />
                                 </ation:LinearGradientBrush.RelativeTransform>
+                                <ation:GradientStop Color="#FFFFFFFF" />
+                                <ation:GradientStop Color="#FFD5EAEA" Offset="1" />
                             </ation:LinearGradientBrush>
                         </ation:Rectangle.Fill>
                     </ation:Rectangle>
