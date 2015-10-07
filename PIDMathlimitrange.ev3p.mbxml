@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EditorDefinitions>
+  <PolyGroups>
+    <PolyGroup BlockFamily="My" IconBaseName="PolyGroup_074_Math">
+      <Block>
+        <Mode>MyBlock</Mode>
+        <Description />
+        <Reference Type="VILib" />
+        <PaletteInfo Weight="0.5" />
+        <ParamInfo Name="error" DisplayName="error" Direction="Input" Identification="Identification_028_Width.png" DataType="Single" DefaultValue="0" />
+        <ParamInfo Name="Proportional(KP)" DisplayName="Proportional(KP)" Direction="Input" Identification="Identification_000_A.png" DataType="Single" DefaultValue="1" />
+        <ParamInfo Name="Integral(KI)" DisplayName="Integral(KI)" Direction="Input" Identification="Identification_001_B.png" DataType="Single" DefaultValue="0" />
+        <ParamInfo Name="Derivative(KD)" DisplayName="Derivative(KD)" Direction="Input" Identification="Identification_002_C.png" DataType="Single" DefaultValue="0" />
+        <ParamInfo Name="MostDrasticTurn" DisplayName="MostDrasticTurn" Direction="Input" Identification="Identification_031_ComparisonType_GreaterEqual.png" DataType="Single" DefaultValue="-35" />
+        <ParamInfo Name="Input Number" DisplayName="" Direction="Input" Identification="Identification_033_ComparisonType_LessEqual.png" DataType="Single" DefaultValue="35" />
+        <ParamInfo Name="Output" DisplayName="Output" Direction="Output" Identification="Identification_030_ComparisonType_Equal.png" DataType="Single" />
+      </Block>
+    </PolyGroup>
+  </PolyGroups>
+</EditorDefinitions>
