@@ -128,7 +128,7 @@
                         <ConfigurableMethodTerminal ConfiguredValue="0">
                             <Terminal Id="Integral\(KI\)" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="116 56 30 27" />
                         </ConfigurableMethodTerminal>
-                        <ConfigurableMethodTerminal ConfiguredValue="1">
+                        <ConfigurableMethodTerminal ConfiguredValue="0.7">
                             <Terminal Id="Proportional\(KP\)" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="85 56 30 27" />
                         </ConfigurableMethodTerminal>
                         <ConfigurableMethodTerminal ConfiguredValue="0">
