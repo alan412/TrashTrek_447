@@ -13,7 +13,12 @@ print('}')
 
 for fileName in glob.iglob("*.ev3p"):
    node = fileName[:-5]
+#Python 2
    f = open(fileName)
+#Python 3
+#   f = open(fileName, encoding='utf-8')
+####
+   
    list = []
    for line in f:
        if line.find('.ev3p') != -1:
@@ -26,7 +31,11 @@ for fileName in glob.iglob("*.ev3p"):
        print( '"{0}"'.format(node))
    else:
        for item in list:
-           print( '"{0}"->"{1}"'.format(node,item))
+           string = '"{0}"->"{1}"'.format(node,item);
+           if node[:2] == "M_":
+              print(string + '[color=blue]')
+           else:
+              print(string)
    f.close()
 print('''
 subgraph legend {
