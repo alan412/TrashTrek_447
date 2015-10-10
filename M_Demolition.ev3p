@@ -401,7 +401,7 @@
                     <Terminal Id="SequenceOut" Direction="Output" Wire="w61" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="176 33 18 18" />
                 </ConfigurableMethodCall>
                 <Wire Id="w61" Joints="N(n62:SequenceOut) N(n50:SequenceIn)" />
-                <ConfigurableMethodCall Id="n54" Bounds="654 5 163 91" Target="gyrocm2\.ev3p">
+                <ConfigurableMethodCall Id="n54" Bounds="654 5 163 91" Target="OLD_gyrocm2\.ev3p">
                     <ConfigurableMethodTerminal ConfiguredValue="0">
                         <Terminal Id="InterruptsToListenFor_16B03592_CD76_4D58_8DC3_E3C3091E327A" Direction="Input" DataType="Int32" Hotspot="0.5 1" Bounds="0 0 0 0" />
                     </ConfigurableMethodTerminal>
@@ -418,7 +418,7 @@
                     <Terminal Id="SequenceOut" Direction="Output" Wire="w67" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="145 33 18 18" />
                 </ConfigurableMethodCall>
                 <Wire Id="w67" Joints="N(n54:SequenceOut) N(n42:SequenceIn)" />
-                <ConfigurableMethodCall Id="n63" Bounds="918 5 163 91" Target="gyrocm2\.ev3p">
+                <ConfigurableMethodCall Id="n63" Bounds="918 5 163 91" Target="OLD_gyrocm2\.ev3p">
                     <ConfigurableMethodTerminal ConfiguredValue="0">
                         <Terminal Id="InterruptsToListenFor_16B03592_CD76_4D58_8DC3_E3C3091E327A" Direction="Input" DataType="Int32" Hotspot="0.5 1" Bounds="0 0 0 0" />
                     </ConfigurableMethodTerminal>
@@ -435,7 +435,7 @@
                     <Terminal Id="SequenceOut" Direction="Output" Wire="w68" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="145 33 18 18" />
                 </ConfigurableMethodCall>
                 <Wire Id="w68" Joints="N(n63:SequenceOut) N(n44:SequenceIn)" />
-                <ConfigurableMethodCall Id="n64" Bounds="1407 5 163 91" Target="gyrocm2\.ev3p">
+                <ConfigurableMethodCall Id="n64" Bounds="1407 5 163 91" Target="OLD_gyrocm2\.ev3p">
                     <ConfigurableMethodTerminal ConfiguredValue="0">
                         <Terminal Id="InterruptsToListenFor_16B03592_CD76_4D58_8DC3_E3C3091E327A" Direction="Input" DataType="Int32" Hotspot="0.5 1" Bounds="0 0 0 0" />
                     </ConfigurableMethodTerminal>
