@@ -113,7 +113,7 @@
                             <ConfigurableMethodTerminal>
                                 <Terminal Id="valueOut" Direction="Output" Wire="w7" DataType="String" Hotspot="0.5 1" Bounds="54 56 30 27" />
                             </ConfigurableMethodTerminal>
-                            <ConfigurableMethodTerminal ConfiguredValue="Scrap cars">
+                            <ConfigurableMethodTerminal ConfiguredValue="sorter">
                                 <Terminal Id="valueIn" Direction="Input" DataType="String" Hotspot="0.5 1" Bounds="0 0 0 0" />
                             </ConfigurableMethodTerminal>
                             <Terminal Id="SequenceIn" Direction="Input" Wire="w5" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
@@ -182,7 +182,7 @@
                     <Terminal Id="SequenceIn" Direction="Input" Wire="w18" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
                     <Terminal Id="SequenceOut" Direction="Output" Wire="w19" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="176 33 18 18" />
                 </ConfigurableMethodCall>
-                <Wire Id="w17" Joints="N(n8:whichdisplay) v(22) h(251) N(n10:Number) B(0) v(54) h(656) N(n9:A)" />
+                <Wire Id="w17" Joints="N(n8:whichdisplay) v(54) h(656) N(n9:A) B(0) v(22) h(251) N(n10:Number)" />
                 <Wire Id="w14" Joints="N(b11:n7) v(19) h(310) N(n9:C)" />
                 <Wire Id="w16" Joints="N(n9:Result) v(22) h(101) N(n11:Text)" />
                 <Wire Id="w18" Joints="N(n7:SequenceOut) N(n9:SequenceIn)" />
