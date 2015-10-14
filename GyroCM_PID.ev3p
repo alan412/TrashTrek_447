@@ -106,13 +106,13 @@
                     <Wire Id="w26" Joints="N(n33:SequenceOut) N(n22:SequenceIn)" />
                     <Wire Id="w28" Joints="N(b23:d0) h(364) N(n1:ThresholdDegrees)" />
                     <ConfigurableMethodCall Id="n22" Bounds="313 118 287 91" Target="PIDMathlimitrange\.ev3p">
-                        <ConfigurableMethodTerminal ConfiguredValue="1.3">
+                        <ConfigurableMethodTerminal ConfiguredValue="0">
                             <Terminal Id="Derivative\(KD\)" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="147 56 30 27" />
                         </ConfigurableMethodTerminal>
-                        <ConfigurableMethodTerminal ConfiguredValue="0.5">
+                        <ConfigurableMethodTerminal ConfiguredValue="0">
                             <Terminal Id="Integral\(KI\)" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="116 56 30 27" />
                         </ConfigurableMethodTerminal>
-                        <ConfigurableMethodTerminal ConfiguredValue="1">
+                        <ConfigurableMethodTerminal ConfiguredValue="0.7">
                             <Terminal Id="Proportional\(KP\)" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="85 56 30 27" />
                         </ConfigurableMethodTerminal>
                         <ConfigurableMethodTerminal ConfiguredValue="0">
@@ -160,7 +160,7 @@
                     <Wire Id="w21" Joints="N(n0:SequenceOut) N(n31:SequenceIn)" />
                     <Wire Id="w25" Joints="N(n21:SequenceOut) N(n24:SequenceIn)" />
                     <Wire Id="w27" Joints="N(b27:d0) v(-28) h(71) N(n21:max\ speed)" />
-                    <Wire Id="w32" Joints="N(n21:NewSpeed) v(38) h(101) N(n24:valueIn) B(0) v(30) h(233) N(n27:Speed)" />
+                    <Wire Id="w32" Joints="N(n21:NewSpeed) v(30) h(233) N(n27:Speed) B(0) v(38) h(101) N(n24:valueIn)" />
                     <ConfigurableMethodCall Id="n26" Bounds="598 118 101 91" Target="X3\.Lib:GlobalGetSingle">
                         <ConfigurableMethodTerminal>
                             <Terminal Id="valueOut" Direction="Output" Wire="w30" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
