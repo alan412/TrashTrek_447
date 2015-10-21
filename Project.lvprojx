@@ -136,7 +136,6 @@
                 <SourceFileReference StoragePath="Truck.ev3p" RelativeStoragePath="Truck.ev3p" OverridingDocumentTypeIdentifier="X3VIDocument" DocumentTypeIdentifier="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Truck\.ev3p" Bindings="Envoy,DefinitionReference,SourceFileReference,X3VIDocument">
                     <X3DocumentSettings ShowFileOnStartup="False" IsTeacherOnlyFile="False" IsHiddenDependency="False" xmlns="http://www.ni.com/X3DocumentSettings.xsd" />
                 </SourceFileReference>
-                <DefinitionReference DocumentTypeIdentifier="NationalInstruments.X3.App.X3FolderLoaderDefinition" Name="vi\.lib_PBR" Bindings="Envoy,DefinitionReference,EmbeddedReference" />
                 <SourceFileReference StoragePath="M_Truck.ev3p" RelativeStoragePath="M_Truck.ev3p" OverridingDocumentTypeIdentifier="X3VIDocument" DocumentTypeIdentifier="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="M_Truck\.ev3p" Bindings="Envoy,DefinitionReference,SourceFileReference,X3VIDocument" />
                 <DefinitionReference DocumentTypeIdentifier="NationalInstruments.ExternalFileSupport.Modeling.ExternalFileType" Name="M_Truck\.ev3p\.mbxml" Bindings="Envoy,DefinitionReference,EmbeddedReference,ProjectItemDragDropDefaultService" />
                 <SourceFileReference StoragePath="Demolition_NEW.ev3p" RelativeStoragePath="Demolition_NEW.ev3p" OverridingDocumentTypeIdentifier="X3VIDocument" DocumentTypeIdentifier="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Demolition_NEW\.ev3p" Bindings="Envoy,DefinitionReference,SourceFileReference,X3VIDocument" />
@@ -144,6 +143,7 @@
                 <DefinitionReference DocumentTypeIdentifier="NationalInstruments.ExternalFileSupport.Modeling.ExternalFileType" Name="M_Demo\.ev3p\.mbxml" Bindings="Envoy,DefinitionReference,EmbeddedReference,ProjectItemDragDropDefaultService" />
                 <SourceFileReference StoragePath="M_CompostScrapCars.ev3p" RelativeStoragePath="M_CompostScrapCars.ev3p" OverridingDocumentTypeIdentifier="X3VIDocument" DocumentTypeIdentifier="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="M_CompostScrapCars\.ev3p" Bindings="Envoy,DefinitionReference,SourceFileReference,X3VIDocument" />
                 <DefinitionReference DocumentTypeIdentifier="NationalInstruments.ExternalFileSupport.Modeling.ExternalFileType" Name="M_CompostScrapCars\.ev3p\.mbxml" Bindings="Envoy,DefinitionReference,EmbeddedReference,ProjectItemDragDropDefaultService" />
+                <DefinitionReference DocumentTypeIdentifier="NationalInstruments.X3.App.X3FolderLoaderDefinition" Name="vi\.lib_PBR" Bindings="Envoy,DefinitionReference,EmbeddedReference" />
             </Target>
             <ProjectSettings>
                 <NamedGlobalData xmlns="http://www.ni.com/X3NamedGlobalData.xsd">
@@ -369,29 +369,29 @@
             <StoragePath></StoragePath>
         </ExternalFile>
     </Namespace>
+    <Namespace Name="M_Truck\.ev3p\.mbxml">
+        <ExternalFile xmlns="http://www.ni.com/ExternalFile.xsd">
+            <RelativeStoragePath>M_Truck.ev3p.mbxml</RelativeStoragePath>
+            <StoragePath></StoragePath>
+        </ExternalFile>
+    </Namespace>
+    <Namespace Name="M_Demo\.ev3p\.mbxml">
+        <ExternalFile xmlns="http://www.ni.com/ExternalFile.xsd">
+            <RelativeStoragePath>M_Demo.ev3p.mbxml</RelativeStoragePath>
+            <StoragePath></StoragePath>
+        </ExternalFile>
+    </Namespace>
+    <Namespace Name="M_CompostScrapCars\.ev3p\.mbxml">
+        <ExternalFile xmlns="http://www.ni.com/ExternalFile.xsd">
+            <RelativeStoragePath>M_CompostScrapCars.ev3p.mbxml</RelativeStoragePath>
+            <StoragePath></StoragePath>
+        </ExternalFile>
+    </Namespace>
     <Namespace Name="vi\.lib_PBR">
         <LoaderDefinition xmlns="http://www.ni.com/LoaderDefinition.xsd">
             <Type>FolderLoaderDefinition</Type>
             <Name>vi.lib_PBR</Name>
             <Location />
         </LoaderDefinition>
-    </Namespace>
-    <Namespace Name="M_Truck\.ev3p\.mbxml">
-        <ExternalFile xmlns="http://www.ni.com/ExternalFile.xsd">
-            <RelativeStoragePath>M_Truck.ev3p.mbxml</RelativeStoragePath>
-            <StoragePath />
-        </ExternalFile>
-    </Namespace>
-    <Namespace Name="M_Demo\.ev3p\.mbxml">
-        <ExternalFile xmlns="http://www.ni.com/ExternalFile.xsd">
-            <RelativeStoragePath>M_Demo.ev3p.mbxml</RelativeStoragePath>
-            <StoragePath />
-        </ExternalFile>
-    </Namespace>
-    <Namespace Name="M_CompostScrapCars\.ev3p\.mbxml">
-        <ExternalFile xmlns="http://www.ni.com/ExternalFile.xsd">
-            <RelativeStoragePath>M_CompostScrapCars.ev3p.mbxml</RelativeStoragePath>
-            <StoragePath />
-        </ExternalFile>
     </Namespace>
 </SourceFile>
