@@ -258,9 +258,9 @@
                         <Terminal Id="SequenceIn" Direction="Input" Wire="w26" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
                         <Terminal Id="SequenceOut" Direction="Output" Wire="w40" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="269 33 18 18" />
                     </ConfigurableMethodCall>
-                    <Wire Id="w42" Joints="N(n7:change) v(38) h(877) N(n12:x) B(0) v(22) h(101) N(n14:error)" />
+                    <Wire Id="w42" Joints="N(n7:change) v(22) h(101) N(n14:error) B(0) v(38) h(877) N(n12:x)" />
                     <Wire Id="w40" Joints="N(n14:SequenceOut) N(n37:SequenceIn)" />
-                    <Wire Id="w41" Joints="N(n10:Output) v(122.5) h(503) N(b31:n32) B(0) v(22) h(101) N(n11:X)" />
+                    <Wire Id="w41" Joints="N(n10:Output) v(22) h(101) N(n11:X) B(0) v(122.5) h(503) N(b31:n32)" />
                     <ConfigurableMethodCall Id="n37" Bounds="598 159 132 91" Target="Arithmetic_AbsoluteValue\.vix">
                         <ConfigurableMethodTerminal ConfiguredValue="1">
                             <Terminal Id="X" Direction="Input" Wire="w45" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
@@ -275,7 +275,7 @@
                     <Wire Id="w44" Joints="N(n37:SequenceOut) N(n10:SequenceIn)" />
                     <Wire Id="w43" Joints="N(n18:SequenceOut) N(n1:SequenceIn)" />
                     <Wire Id="w45" Joints="N(n14:Output) v(12.679) h(101) N(n37:X)" />
-                    <Wire Id="w46" Joints="N(n37:Result) v(22) h(163) N(n10:X) B(0) v(171) h(903) N(n18:x)" />
+                    <Wire Id="w46" Joints="N(n37:Result) v(171) h(903) N(n18:x) B(0) v(22) h(163) N(n10:X)" />
                     <Comment Bounds="317 49 275 80" SizeMode="User" AttachStyle="Free">
                         <Content>workes great with just the praportional could tun more later </Content>
                     </Comment>
@@ -285,7 +285,7 @@
                 </ConfigurableWhileLoop>
                 <Wire Id="w5" Joints="N(n1:SequenceOut) N(n2:SequenceIn)" />
                 <Wire Id="w6" Joints="N(n9:heading) v(139) h(541) N(b8:n2)" />
-                <Wire Id="w8" Joints="N(n9:maxspeed) v(119) h(835) N(b18:n2)" />
+                <Wire Id="w8" Joints="N(n9:maxspeed) v(279) h(835) N(b18:n2)" />
                 <Wire Id="w10" Joints="N(n9:proportional) v(169) h(998) N(b21:n2)" />
                 <ConfigurableMethodCall Id="n12" Bounds="2172 0 101 91" Target="MoveStop\.vix">
                     <ConfigurableMethodTerminal ConfiguredValue="1.B+C">
