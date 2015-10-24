@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EditorDefinitions>
+  <PolyGroups>
+    <PolyGroup BlockFamily="My" IconBaseName="PolyGroup_091_Datalogging">
+      <Block>
+        <Mode>MyBlock</Mode>
+        <Description />
+        <Reference Type="VILib" />
+        <PaletteInfo Weight="0.5" />
+        <ParamInfo Name="Mission Description" DisplayName="Mission Description" Direction="Input" Identification="Identification_0010_Text.png" DataType="String" DefaultValue="Random Mission" />
+        <ParamInfo Name="FinishRun?" DisplayName="FinishRun?" Direction="Input" Identification="Identification_512_PlayType_WaitForCompletion.png" DataType="Boolean" DefaultValue="False" />
+      </Block>
+    </PolyGroup>
+  </PolyGroups>
+</EditorDefinitions>
