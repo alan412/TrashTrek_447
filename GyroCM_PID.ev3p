@@ -98,7 +98,7 @@
                         <ConfigurableMethodTerminal ConfiguredValue="0">
                             <Terminal Id="Derivative\(KD\)" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="147 56 30 27" />
                         </ConfigurableMethodTerminal>
-                        <ConfigurableMethodTerminal ConfiguredValue="0">
+                        <ConfigurableMethodTerminal ConfiguredValue="0.5">
                             <Terminal Id="Integral\(KI\)" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="116 56 30 27" />
                         </ConfigurableMethodTerminal>
                         <ConfigurableMethodTerminal ConfiguredValue="0.7">
@@ -148,7 +148,7 @@
                     <Wire Id="w21" Joints="N(n0:SequenceOut) N(n31:SequenceIn)" />
                     <Wire Id="w25" Joints="N(n21:SequenceOut) N(n24:SequenceIn)" />
                     <Wire Id="w27" Joints="N(b27:d0) h(-194) N(n21:max\ speed)" />
-                    <Wire Id="w32" Joints="N(n21:NewSpeed) v(38) h(101) N(n24:valueIn) B(0) v(30) h(235) N(n27:Speed)" />
+                    <Wire Id="w32" Joints="N(n21:NewSpeed) v(30) h(235) N(n27:Speed) B(0) v(38) h(101) N(n24:valueIn)" />
                     <ConfigurableMethodCall Id="n26" Bounds="911 143 101 91" Target="X3\.Lib:GlobalGetSingle">
                         <ConfigurableMethodTerminal>
                             <Terminal Id="valueOut" Direction="Output" Wire="w30" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
@@ -318,8 +318,8 @@
                     </ConfigurableMethodTerminal>
                 </ConfigurableMegaAccessor>
                 <Wire Id="w13" Joints="N(n19:Brake\?) v(183) h(3886) N(n8:Brake\ At\ End)" />
-                <Wire Id="w14" Joints="N(n19:Gyro\ Degrees) v(163) h(2117) N(b35:n15) B(0) v(38) h(445) N(n30:DesiredHeading) B(0) v(139) h(1119) N(b44:n44)" />
-                <Wire Id="w18" Joints="N(n19:Speed) v(259) h(3111) N(b27:n15) B(0) v(148) h(1295) N(n25:x) B(0) v(129) h(955) N(b45:n44)" />
+                <Wire Id="w14" Joints="N(n19:Gyro\ Degrees) v(139) h(1119) N(b44:n44) B(0) v(38) h(445) N(n30:DesiredHeading) B(0) v(163) h(2117) N(b35:n15)" />
+                <Wire Id="w18" Joints="N(n19:Speed) v(129) h(955) N(b45:n44) B(0) v(148) h(1295) N(n25:x) B(0) v(259) h(3111) N(b27:n15)" />
                 <ConfigurableMethodCall Id="n32" Bounds="1887 0 163 91" Target="Cm2Output\.ev3p">
                     <ConfigurableMethodTerminal ConfiguredValue="10">
                         <Terminal Id="Centimeters" Direction="Input" Wire="w20" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
