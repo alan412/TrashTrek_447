@@ -37,15 +37,15 @@
                         <SequenceNode Id="Input" Bounds="701 75 18 18">
                             <Terminal Id="SequenceTerminal" Direction="Input" Wire="w13" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 0 18 18" />
                         </SequenceNode>
-                        <ConfigurableMethodCall Id="n8" Bounds="375 42 163 91" Target="MediumMotorDistanceRotations\.vix">
+                        <ConfigurableMethodCall Id="n8" Bounds="375 42 163 91" Target="MediumMotorDistance\.vix">
                             <ConfigurableMethodTerminal ConfiguredValue="1.A">
                                 <Terminal Id="MotorPort" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="0 0 0 0" />
                             </ConfigurableMethodTerminal>
                             <ConfigurableMethodTerminal ConfiguredValue="100">
                                 <Terminal Id="Speed" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
                             </ConfigurableMethodTerminal>
-                            <ConfigurableMethodTerminal ConfiguredValue="-17">
-                                <Terminal Id="Rotations" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="85 56 30 27" />
+                            <ConfigurableMethodTerminal ConfiguredValue="-2660">
+                                <Terminal Id="Degrees" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="85 56 30 27" />
                             </ConfigurableMethodTerminal>
                             <ConfigurableMethodTerminal ConfiguredValue="True">
                                 <Terminal Id="Brake\ At\ End" Direction="Input" DataType="Boolean" Hotspot="0.5 1" Bounds="116 56 30 27" />
