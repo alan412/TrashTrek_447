@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EditorDefinitions>
+  <PolyGroups>
+    <PolyGroup BlockFamily="My" IconBaseName="PolyGroup_051_ColorSensor">
+      <Block>
+        <Mode>MyBlock</Mode>
+        <Description />
+        <Reference Type="VILib" />
+        <PaletteInfo Weight="0.5" />
+        <ParamInfo Name="heading" DisplayName="heading" Direction="Input" Identification="Identification_278_MotorRotation.png" DataType="Single" DefaultValue="0" />
+        <ParamInfo Name="maxspeed" DisplayName="maxspeed" Direction="Input" Identification="Identification_209_CurrentPower.png" DataType="Single" DefaultValue="30" />
+        <ParamInfo Name="port" DisplayName="port" Direction="Input" Identification="Identification_501_MeasuredColor.png" DataType="Single" DefaultValue="3" Configuration="SliderHorizontal.custom" MinValue="3" MaxValue="4" />
+        <ParamInfo Name="break?" DisplayName="break?" Direction="Input" Identification="Identification_508_BrakeAtEnd_Brake.png" DataType="Boolean" DefaultValue="False" />
+      </Block>
+    </PolyGroup>
+  </PolyGroups>
+</EditorDefinitions>
