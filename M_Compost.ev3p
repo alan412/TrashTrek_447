@@ -23,7 +23,7 @@
                         <Terminal Id="run\?" Direction="Output" Wire="w12" DataType="Boolean" Hotspot="0.5 1" Bounds="10 56 30 27" />
                     </ConfigurableMethodTerminal>
                 </ConfigurableMegaAccessor>
-                <ConfigurableMegaAccessor Id="n21" Bounds="-141 158 49 91" Target="X3\.Lib:ConfigurableMegaAccessor" AccessorType="Output">
+                <ConfigurableMegaAccessor Id="n21" Bounds="53 132 49 91" Target="X3\.Lib:ConfigurableMegaAccessor" AccessorType="Output">
                     <ConfigurableMethodTerminal ConfiguredValue="">
                         <Terminal Id="name" Direction="Input" Wire="w20" DataType="String" Hotspot="0.5 1" Bounds="10 56 30 27" />
                     </ConfigurableMethodTerminal>
@@ -39,7 +39,7 @@
                     <Terminal Id="SequenceOut" Direction="Output" Wire="w19" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="83 33 18 18" />
                 </ConfigurableMethodCall>
                 <Wire Id="w19" Joints="N(n18:SequenceOut) N(n29:SequenceIn)" />
-                <Wire Id="w20" Joints="N(n18:valueOut) v(185) h(-311) N(n21:name)" />
+                <Wire Id="w20" Joints="N(n18:valueOut) v(185) h(-117) N(n21:name)" />
                 <ConfigurableCaseStructure Id="n27" Bounds="312 -46 1461 176" DataType="Boolean" UserSelectorBounds="0 0 0 0" Selected="D27" Default="D27" PairedConfigurableMethodCall="n29">
                     <Terminal Id="SequenceOut" Direction="Output" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="1443 79 18 18" />
                     <ConfigurableCaseStructure.Case Id="D27" Bounds="10 4 1441 169" Pattern="True">

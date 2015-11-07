@@ -23,7 +23,7 @@
                         <Terminal Id="run\?" Direction="Output" Wire="w9" DataType="Boolean" Hotspot="0.5 1" Bounds="10 56 30 27" />
                     </ConfigurableMethodTerminal>
                 </ConfigurableMegaAccessor>
-                <ConfigurableMegaAccessor Id="n13" Bounds="1967 16 49 91" Target="X3\.Lib:ConfigurableMegaAccessor" AccessorType="Output">
+                <ConfigurableMegaAccessor Id="n13" Bounds="1372 -15 49 91" Target="X3\.Lib:ConfigurableMegaAccessor" AccessorType="Output">
                     <ConfigurableMethodTerminal ConfiguredValue="">
                         <Terminal Id="name" Direction="Input" Wire="w12" DataType="String" Hotspot="0.5 1" Bounds="10 56 30 27" />
                     </ConfigurableMethodTerminal>
@@ -169,7 +169,7 @@
                     <Terminal Id="SequenceOut" Direction="Output" Wire="w11" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="83 33 18 18" />
                 </ConfigurableMethodCall>
                 <Wire Id="w11" Joints="N(n11:SequenceOut) N(n18:SequenceIn)" />
-                <Wire Id="w12" Joints="N(n11:valueOut) v(98) h(1666) N(n13:name)" />
+                <Wire Id="w12" Joints="N(n11:valueOut) v(98) h(1071) N(n13:name)" />
             </BlockDiagram>
         </VirtualInstrument>
     </Namespace>
