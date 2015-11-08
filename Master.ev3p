@@ -280,7 +280,7 @@
                         <ConfigurableMethodTerminal ConfiguredValue="1">
                             <Terminal Id="Min" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
                         </ConfigurableMethodTerminal>
-                        <ConfigurableMethodTerminal ConfiguredValue="6">
+                        <ConfigurableMethodTerminal ConfiguredValue="7">
                             <Terminal Id="Max" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="85 56 30 27" />
                         </ConfigurableMethodTerminal>
                         <ConfigurableMethodTerminal ConfiguredValue="0">
