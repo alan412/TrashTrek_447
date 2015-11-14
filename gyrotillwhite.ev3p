@@ -19,7 +19,7 @@
                     </ConfigurableMethodTerminal>
                     <Terminal Id="SequenceOut" Direction="Output" Wire="w15" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="52 33 18 18" />
                 </StartBlock>
-                <ConfigurableWhileLoop Id="n15" Bounds="364 -231 1262 467" DiagramId="d0" InterruptName="gyrotillline">
+                <ConfigurableWhileLoop Id="n15" Bounds="364 -231 1262 467" DiagramId="d0" InterruptName="01">
                     <Terminal Id="SequenceIn" Direction="Input" Wire="w17" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 264 18 18" />
                     <Terminal Id="SequenceOut" Direction="Output" Wire="w14" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="1244 264 18 18" />
                     <ConfigurableWhileLoop.BuiltInMethod CallType="LoopIndex">
@@ -235,7 +235,7 @@
                     </ConfigurableMethodTerminal>
                 </ConfigurableMegaAccessor>
                 <Wire Id="w13" Joints="N(n19:heading) v(242) h(743) N(b29:n15)" />
-                <Wire Id="w16" Joints="N(n19:maxspeed) v(206) h(1352) N(b26:n15) B(0) v(31) h(279) N(n17:x)" />
+                <Wire Id="w16" Joints="N(n19:maxspeed) v(31) h(279) N(n17:x) B(0) v(206) h(1352) N(b26:n15)" />
                 <Wire Id="w18" Joints="N(n19:port) v(272) h(1421) N(b24:n15)" />
                 <Wire Id="w19" Joints="N(n19:break\?) v(301) h(1720) N(n8:Brake\ At\ End)" />
                 <ConfigurableMethodCall Id="n17" Bounds="126 0 163 91" Target="Comparison_Less\.vix">
