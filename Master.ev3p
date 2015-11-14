@@ -109,16 +109,16 @@
                                     <Terminal Id="name" Direction="Input" DataType="String" Hotspot="0.5 1" Bounds="0 0 0 0" />
                                 </ConfigurableMethodTerminal>
                                 <ConfigurableMethodTerminal ConfiguredValue="0">
-                                    <Terminal Id="valueIn" Direction="Input" Wire="w11" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
+                                    <Terminal Id="valueIn" Direction="Input" Wire="w11" DataType="Single" Hotspot="0 0.5" Bounds="0 47 14 14" />
                                 </ConfigurableMethodTerminal>
                                 <ConfigurableMethodTerminal ConfiguredValue="0">
-                                    <Terminal Id="InterruptsToListenFor_16B03592_CD76_4D58_8DC3_E3C3091E327A" Direction="Input" DataType="Int32" Hotspot="0.5 1" Bounds="0 0 0 0" />
+                                    <Terminal Id="InterruptsToListenFor_16B03592_CD76_4D58_8DC3_E3C3091E327A" Direction="Input" DataType="Int32" Hotspot="0 0.5" Bounds="0 14 14 14" />
                                 </ConfigurableMethodTerminal>
                                 <Terminal Id="SequenceIn" Direction="Input" Wire="w9" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
                                 <Terminal Id="SequenceOut" Direction="Output" Wire="w12" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="83 33 18 18" />
                             </ConfigurableMethodCall>
                             <Wire Id="w9" Joints="N(n10:SequenceOut) N(n9:SequenceIn)" />
-                            <Wire Id="w11" Joints="N(n10:Result) v(22) h(101) N(n9:valueIn)" />
+                            <Wire Id="w11" Joints="N(n10:Result) v(22) h(32) N(n9:valueIn)" />
                             <ConfigurableWaitFor Id="n12" Bounds="379 184 101 91" Target="TimeCompare\.vix">
                                 <ConfigurableMethodTerminal ConfiguredValue="0.5">
                                     <Terminal Id="How\ Long" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
@@ -280,7 +280,7 @@
                         <ConfigurableMethodTerminal ConfiguredValue="1">
                             <Terminal Id="Min" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
                         </ConfigurableMethodTerminal>
-                        <ConfigurableMethodTerminal ConfiguredValue="7">
+                        <ConfigurableMethodTerminal ConfiguredValue="5">
                             <Terminal Id="Max" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="85 56 30 27" />
                         </ConfigurableMethodTerminal>
                         <ConfigurableMethodTerminal ConfiguredValue="0">
@@ -455,7 +455,7 @@
                     <Wire Id="w20" Joints="N(n10:Result) v(27) h(101) N(n6:Mission\ Description)" />
                 </ConfigurableWhileLoop>
                 <Wire Id="w11" Joints="N(n2:SequenceOut) N(n4:SequenceIn)" />
-                <Wire Id="w12" Joints="N(n1:SequenceOut) h(65.5) v(-12) N(n11:SequenceIn) B(0) h(10) v(506) h(-25) v(198) N(n6:SequenceIn)" />
+                <Wire Id="w12" Joints="N(n1:SequenceOut) h(10) v(506) h(-25) v(198) N(n6:SequenceIn) B(0) h(65.5) v(-12) N(n11:SequenceIn)" />
             </BlockDiagram>
         </VirtualInstrument>
     </Namespace>
