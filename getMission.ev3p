@@ -175,6 +175,9 @@
                 <Wire Id="w10" Joints="N(n8:run\?) v(165) h(318) N(b10:n10)" />
                 <Wire Id="w13" Joints="N(b11:n10) v(14) h(1004) N(n9:mission\ name)" />
                 <Wire Id="w17" Joints="N(n1:SequenceOut) N(n12:SequenceIn)" />
+                <Comment Bounds="191 -143 676 63" SizeMode="User" AttachStyle="Free">
+                    <Content>this puts our missions in order</Content>
+                </Comment>
             </BlockDiagram>
         </VirtualInstrument>
     </Namespace>

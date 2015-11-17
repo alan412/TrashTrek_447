@@ -45,8 +45,8 @@
                     <Terminal Id="SequenceIn" Direction="Input" Wire="w6" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
                     <Terminal Id="SequenceOut" Direction="Output" Wire="w12" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="145 33 18 18" />
                 </ConfigurableMethodCall>
-                <Wire Id="w7" Joints="N(n9:A) v(91) h(502) N(b12:n13) B(0) v(22) h(282) N(n6:x)" />
-                <Wire Id="w8" Joints="N(n9:B) v(127) h(545) N(b16:n13) B(0) v(30) h(282) N(n6:y)" />
+                <Wire Id="w7" Joints="N(n9:A) v(22) h(282) N(n6:x) B(0) v(91) h(502) N(b12:n13)" />
+                <Wire Id="w8" Joints="N(n9:B) v(30) h(282) N(n6:y) B(0) v(127) h(545) N(b16:n13)" />
                 <Wire Id="w12" Joints="N(n6:SequenceOut) N(n16:SequenceIn)" />
                 <ConfigurableCaseStructure Id="n13" Bounds="1153 62 237 173" DataType="Boolean" UserSelectorBounds="0 0 0 0" Selected="D15" Default="D14" PairedConfigurableMethodCall="n16">
                     <Terminal Id="SequenceOut" Direction="Output" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="219 76 18 18" />

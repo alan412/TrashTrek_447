@@ -62,7 +62,7 @@
                     <Terminal Id="SequenceIn" Direction="Input" Wire="w11" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
                     <Terminal Id="SequenceOut" Direction="Output" Wire="w12" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="176 33 18 18" />
                 </ConfigurableMethodCall>
-                <Wire Id="w17" Joints="N(n8:whichdisplay) v(54) h(368) N(n9:A) B(0) v(22) h(205) N(n10:mission\ numb)" />
+                <Wire Id="w17" Joints="N(n8:whichdisplay) v(22) h(205) N(n10:mission\ numb) B(0) v(54) h(368) N(n9:A)" />
                 <Wire Id="w16" Joints="N(n9:Result) v(22) h(101) N(n11:Text)" />
                 <ConfigurableMethodCall Id="n10" Bounds="80 0 163 91" Target="getMission\.ev3p">
                     <ConfigurableMethodTerminal ConfiguredValue="0">
@@ -95,6 +95,9 @@
                     <Terminal Id="SequenceOut" Direction="Output" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="83 33 18 18" />
                 </ConfigurableMethodCall>
                 <Wire Id="w13" Joints="N(n11:SequenceOut) N(n12:SequenceIn)" />
+                <Comment Bounds="51 -67 801 63" SizeMode="User" AttachStyle="Free">
+                    <Content>this displays which program we are in and the current gyro angle</Content>
+                </Comment>
             </BlockDiagram>
         </VirtualInstrument>
     </Namespace>
