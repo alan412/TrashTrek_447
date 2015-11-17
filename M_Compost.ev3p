@@ -40,9 +40,9 @@
                 </ConfigurableMethodCall>
                 <Wire Id="w19" Joints="N(n18:SequenceOut) N(n29:SequenceIn)" />
                 <Wire Id="w20" Joints="N(n18:valueOut) v(185) h(-117) N(n21:name)" />
-                <ConfigurableCaseStructure Id="n27" Bounds="312 -46 3653 332" DataType="Boolean" UserSelectorBounds="0 0 0 0" Selected="D27" Default="D27" PairedConfigurableMethodCall="n29">
+                <ConfigurableCaseStructure Id="n27" Bounds="312 -46 3653 176" DataType="Boolean" UserSelectorBounds="0 0 0 0" Selected="D27" Default="D27" PairedConfigurableMethodCall="n29">
                     <Terminal Id="SequenceOut" Direction="Output" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="3635 79 18 18" />
-                    <ConfigurableCaseStructure.Case Id="D27" Bounds="10 4 3633 325" Pattern="True">
+                    <ConfigurableCaseStructure.Case Id="D27" Bounds="10 4 3633 169" Pattern="True">
                         <SequenceNode Id="Output" Bounds="0 75 18 18">
                             <Terminal Id="SequenceTerminal" Direction="Output" Wire="w42" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="0 0 18 18" />
                         </SequenceNode>
@@ -441,7 +441,7 @@
                         <Wire Id="w45" Joints="N(n42:SequenceOut) N(n44:SequenceIn)" />
                         <Wire Id="w46" Joints="N(n44:SequenceOut) N(Input:SequenceTerminal)" />
                     </ConfigurableCaseStructure.Case>
-                    <ConfigurableCaseStructure.Case Id="D28" Bounds="10 4 3633 325" Pattern="False">
+                    <ConfigurableCaseStructure.Case Id="D28" Bounds="10 4 3633 169" Pattern="False">
                         <SequenceNode Id="Output" Bounds="0 75 18 18">
                             <Terminal Id="SequenceTerminal" Direction="Output" Wire="w3" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="0 0 18 18" />
                         </SequenceNode>
