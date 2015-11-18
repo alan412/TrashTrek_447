@@ -110,7 +110,7 @@
                             <ConfigurableMethodTerminal ConfiguredValue="210">
                                 <Terminal Id="Gyro\ Degrees" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="85 56 30 27" />
                             </ConfigurableMethodTerminal>
-                            <ConfigurableMethodTerminal ConfiguredValue="20">
+                            <ConfigurableMethodTerminal ConfiguredValue="23">
                                 <Terminal Id="CM" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
                             </ConfigurableMethodTerminal>
                             <ConfigurableMethodTerminal ConfiguredValue="0">
@@ -184,7 +184,7 @@
                             <ConfigurableMethodTerminal ConfiguredValue="270">
                                 <Terminal Id="Gyro\ Degrees" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="85 56 30 27" />
                             </ConfigurableMethodTerminal>
-                            <ConfigurableMethodTerminal ConfiguredValue="120">
+                            <ConfigurableMethodTerminal ConfiguredValue="115">
                                 <Terminal Id="CM" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
                             </ConfigurableMethodTerminal>
                             <ConfigurableMethodTerminal ConfiguredValue="0">
