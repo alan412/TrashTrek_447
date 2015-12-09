@@ -109,10 +109,10 @@
                         <ConfigurableMethodTerminal ConfiguredValue="0">
                             <Terminal Id="InterruptsToListenFor_16B03592_CD76_4D58_8DC3_E3C3091E327A" Direction="Input" DataType="Int32" Hotspot="0.5 1" Bounds="0 0 0 0" />
                         </ConfigurableMethodTerminal>
-                        <ConfigurableMethodTerminal ConfiguredValue="-35">
+                        <ConfigurableMethodTerminal ConfiguredValue="-10">
                             <Terminal Id="MostDrasticTurn" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="178 56 30 27" />
                         </ConfigurableMethodTerminal>
-                        <ConfigurableMethodTerminal ConfiguredValue="35">
+                        <ConfigurableMethodTerminal ConfiguredValue="10">
                             <Terminal Id="Input\ Number" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="209 56 30 27" />
                         </ConfigurableMethodTerminal>
                         <ConfigurableMethodTerminal>
@@ -145,7 +145,7 @@
                     </ConfigurableMethodCall>
                     <Wire Id="w21" Joints="N(n0:SequenceOut) N(n31:SequenceIn)" />
                     <Wire Id="w27" Joints="N(b27:d0) N(n21:max\ speed)" />
-                    <Wire Id="w32" Joints="N(n21:NewSpeed) v(36) h(101) N(n24:valueIn) B(0) v(51) h(233) N(n27:Speed)" />
+                    <Wire Id="w32" Joints="N(n21:NewSpeed) v(51) h(233) N(n27:Speed) B(0) v(36) h(101) N(n24:valueIn)" />
                     <ConfigurableMethodCall Id="n26" Bounds="911 143 101 91" Target="X3\.Lib:GlobalGetSingle">
                         <ConfigurableMethodTerminal>
                             <Terminal Id="valueOut" Direction="Output" Wire="w30" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
@@ -324,7 +324,7 @@
                     </ConfigurableMethodTerminal>
                 </ConfigurableMegaAccessor>
                 <Wire Id="w13" Joints="N(n19:Brake\?) v(454) h(4589) N(n8:Brake\ At\ End)" />
-                <Wire Id="w14" Joints="N(n19:Gyro\ Degrees) v(163) h(2925) N(b35:n15) B(0) v(38) h(445) N(n30:DesiredHeading) B(0) v(360) h(1281) N(b44:n44)" />
+                <Wire Id="w14" Joints="N(n19:Gyro\ Degrees) v(360) h(1281) N(b44:n44) B(0) v(38) h(445) N(n30:DesiredHeading) B(0) v(163) h(2925) N(b35:n15)" />
                 <ConfigurableMethodCall Id="n32" Bounds="2048 0 163 91" Target="Cm2Output\.ev3p">
                     <ConfigurableMethodTerminal ConfiguredValue="10">
                         <Terminal Id="Centimeters" Direction="Input" Wire="w20" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
@@ -518,7 +518,7 @@
                 <Wire Id="w46" Joints="N(n33:SequenceOut) N(n36:SequenceIn)" />
                 <Wire Id="w47" Joints="N(n36:SequenceOut) N(n48:SequenceIn)" />
                 <Wire Id="w48" Joints="N(n44:SequenceOut) N(n25:SequenceIn)" />
-                <ConfigurableCaseStructure Id="n67" Bounds="2296 -46 562 176" DataType="Int32" UserSelectorBounds="0 0 0 0" Selected="D74" Default="D74" PairedConfigurableMethodCall="n66">
+                <ConfigurableCaseStructure Id="n67" Bounds="2296 -46 562 176" DataType="Int32" UserSelectorBounds="0 0 0 0" Selected="D73" Default="D74" PairedConfigurableMethodCall="n66">
                     <Terminal Id="SequenceOut" Direction="Output" Wire="w68" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="544 79 18 18" />
                     <ConfigurableCaseStructure.Case Id="D73" Bounds="10 4 542 169" Pattern="35">
                         <SequenceNode Id="Output" Bounds="0 75 18 18">
@@ -794,8 +794,8 @@
                     <Terminal Id="SequenceOut" Direction="Output" Wire="w61" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="114 33 18 18" />
                 </ConfigurableMethodCall>
                 <Wire Id="w61" Joints="N(n48:SequenceOut) N(n47:SequenceIn)" />
-                <Wire Id="w62" Joints="N(n19:Speed) v(148) h(1456) N(n25:x) B(0) v(259) h(3725) N(b27:n15) B(0) v(63) h(841) N(n48:X)" />
-                <Wire Id="w65" Joints="N(n48:Result) v(213) h(1178) N(n66:Number) B(0) v(122) h(214) N(b61:n44) B(0) v(91) h(1625) N(b62:n67)" />
+                <Wire Id="w62" Joints="N(n19:Speed) v(63) h(841) N(n48:X) B(0) v(259) h(3725) N(b27:n15) B(0) v(148) h(1456) N(n25:x)" />
+                <Wire Id="w65" Joints="N(n48:Result) v(91) h(1625) N(b62:n67) B(0) v(122) h(214) N(b61:n44) B(0) v(213) h(1178) N(n66:Number)" />
                 <Wire Id="w63" Joints="N(b48:n67) v(214) h(892) N(b63:n15)" />
                 <Wire Id="w66" Joints="N(b49:n67) v(278) h(822) N(b65:n15)" />
                 <Wire Id="w67" Joints="N(b50:n67) v(335) h(752) N(b67:n15)" />
