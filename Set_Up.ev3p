@@ -121,7 +121,7 @@
                     </ConfigurableMethodCall>
                     <Wire Id="w4" Joints="N(n0:SequenceOut) N(n6:SequenceIn)" />
                     <ConfigurableWaitFor Id="n13" Bounds="122 41 101 91" Target="TimeCompare\.vix">
-                        <ConfigurableMethodTerminal ConfiguredValue="0.5">
+                        <ConfigurableMethodTerminal ConfiguredValue="2">
                             <Terminal Id="How\ Long" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
                         </ConfigurableMethodTerminal>
                         <ConfigurableMethodTerminal ConfiguredValue="0">
