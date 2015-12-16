@@ -187,7 +187,7 @@
                                         <ConfigurableMethodTerminal ConfiguredValue="1.B+C">
                                             <Terminal Id="Ports" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="0 0 0 0" />
                                         </ConfigurableMethodTerminal>
-                                        <ConfigurableMethodTerminal ConfiguredValue="20">
+                                        <ConfigurableMethodTerminal ConfiguredValue="10">
                                             <Terminal Id="Steering" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
                                         </ConfigurableMethodTerminal>
                                         <ConfigurableMethodTerminal ConfiguredValue="50">
@@ -305,7 +305,7 @@
                 </ConfigurableMethodCall>
                 <Wire Id="w16" Joints="N(n15:SequenceOut) N(n13:SequenceIn)" />
                 <Wire Id="w17" Joints="N(n15:Result) v(233) h(402) N(b18:n2)" />
-                <Wire Id="w18" Joints="N(n12:cm) v(30) h(520) N(n5:Centimeters) B(0) v(22) h(282) N(n15:x)" />
+                <Wire Id="w18" Joints="N(n12:cm) v(22) h(282) N(n15:x) B(0) v(30) h(520) N(n5:Centimeters)" />
                 <Wire Id="w19" Joints="N(n12:speed) v(279) h(972) N(b17:n2)" />
             </BlockDiagram>
         </VirtualInstrument>

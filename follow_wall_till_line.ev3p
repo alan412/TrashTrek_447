@@ -195,7 +195,7 @@
                                         <Terminal Id="SequenceIn" Direction="Input" Wire="w8" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
                                         <Terminal Id="SequenceOut" Direction="Output" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="0 0 0 0" />
                                     </PairedConfigurableMethodCall>
-                                    <ConfigurableCaseStructure Id="n7" Bounds="103 97 197 176" DataType="Boolean" UserSelectorBounds="0 0 0 0" Selected="D9" Default="D8" PairedConfigurableMethodCall="n10">
+                                    <ConfigurableCaseStructure Id="n7" Bounds="103 97 197 176" DataType="Boolean" UserSelectorBounds="0 0 0 0" Selected="D8" Default="D8" PairedConfigurableMethodCall="n10">
                                         <Terminal Id="SequenceOut" Direction="Output" Wire="w9" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="179 79 18 18" />
                                         <ConfigurableCaseStructure.Case Id="D8" Bounds="10 4 177 169" Pattern="True">
                                             <SequenceNode Id="Output" Bounds="0 75 18 18">
@@ -208,7 +208,7 @@
                                                 <ConfigurableMethodTerminal ConfiguredValue="1.B+C">
                                                     <Terminal Id="Ports" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="0 0 0 0" />
                                                 </ConfigurableMethodTerminal>
-                                                <ConfigurableMethodTerminal ConfiguredValue="20">
+                                                <ConfigurableMethodTerminal ConfiguredValue="10">
                                                     <Terminal Id="Steering" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
                                                 </ConfigurableMethodTerminal>
                                                 <ConfigurableMethodTerminal ConfiguredValue="50">
