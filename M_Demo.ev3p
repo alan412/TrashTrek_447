@@ -142,7 +142,7 @@
                             <ConfigurableMethodTerminal ConfiguredValue="50">
                                 <Terminal Id="Speed" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
                             </ConfigurableMethodTerminal>
-                            <ConfigurableMethodTerminal ConfiguredValue="90">
+                            <ConfigurableMethodTerminal ConfiguredValue="70">
                                 <Terminal Id="Degrees" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="85 56 30 27" />
                             </ConfigurableMethodTerminal>
                             <ConfigurableMethodTerminal ConfiguredValue="True">
