@@ -409,7 +409,7 @@
                         <ConfigurableMethodTerminal ConfiguredValue="1">
                             <Terminal Id="Min" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
                         </ConfigurableMethodTerminal>
-                        <ConfigurableMethodTerminal ConfiguredValue="5">
+                        <ConfigurableMethodTerminal ConfiguredValue="6">
                             <Terminal Id="Max" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="85 56 30 27" />
                         </ConfigurableMethodTerminal>
                         <ConfigurableMethodTerminal ConfiguredValue="0">
@@ -594,7 +594,7 @@
                     </Comment>
                 </ConfigurableWhileLoop>
                 <Wire Id="w11" Joints="N(n2:SequenceOut) v(2) N(n4:SequenceIn)" />
-                <Wire Id="w12" Joints="N(n1:SequenceOut) h(65.5) v(-12) N(n11:SequenceIn) B(0) h(10) v(399) N(n6:SequenceIn)" />
+                <Wire Id="w12" Joints="N(n1:SequenceOut) h(10) v(399) N(n6:SequenceIn) B(0) h(65.5) v(-12) N(n11:SequenceIn)" />
                 <Comment Bounds="642 -109 25 20" SizeMode="Auto" AttachStyle="Free">
                     <Content></Content>
                 </Comment>
