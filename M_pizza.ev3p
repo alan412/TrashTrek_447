@@ -39,7 +39,7 @@
                             <ConfigurableMethodTerminal ConfiguredValue="0">
                                 <Terminal Id="InterruptsToListenFor_16B03592_CD76_4D58_8DC3_E3C3091E327A" Direction="Input" DataType="Int32" Hotspot="0.5 1" Bounds="0 0 0 0" />
                             </ConfigurableMethodTerminal>
-                            <ConfigurableMethodTerminal ConfiguredValue="20">
+                            <ConfigurableMethodTerminal ConfiguredValue="40">
                                 <Terminal Id="Speed" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="116 56 30 27" />
                             </ConfigurableMethodTerminal>
                             <Terminal Id="SequenceIn" Direction="Input" Wire="w18" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
@@ -58,7 +58,7 @@
                             <ConfigurableMethodTerminal ConfiguredValue="0">
                                 <Terminal Id="InterruptsToListenFor_16B03592_CD76_4D58_8DC3_E3C3091E327A" Direction="Input" DataType="Int32" Hotspot="0.5 1" Bounds="0 0 0 0" />
                             </ConfigurableMethodTerminal>
-                            <ConfigurableMethodTerminal ConfiguredValue="20">
+                            <ConfigurableMethodTerminal ConfiguredValue="40">
                                 <Terminal Id="Speed" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="116 56 30 27" />
                             </ConfigurableMethodTerminal>
                             <Terminal Id="SequenceIn" Direction="Input" Wire="w7" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
@@ -72,7 +72,7 @@
                             <ConfigurableMethodTerminal ConfiguredValue="90">
                                 <Terminal Id="heading" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
                             </ConfigurableMethodTerminal>
-                            <ConfigurableMethodTerminal ConfiguredValue="20">
+                            <ConfigurableMethodTerminal ConfiguredValue="40">
                                 <Terminal Id="maxspeed" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="85 56 30 27" />
                             </ConfigurableMethodTerminal>
                             <ConfigurableMethodTerminal ConfiguredValue="3">
@@ -92,7 +92,7 @@
                             <ConfigurableMethodTerminal ConfiguredValue="90">
                                 <Terminal Id="Gyro\ Degrees" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="85 56 30 27" />
                             </ConfigurableMethodTerminal>
-                            <ConfigurableMethodTerminal ConfiguredValue="27">
+                            <ConfigurableMethodTerminal ConfiguredValue="28">
                                 <Terminal Id="CM" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
                             </ConfigurableMethodTerminal>
                             <ConfigurableMethodTerminal ConfiguredValue="0">
@@ -240,6 +240,27 @@
                 </ConfigurableMethodCall>
                 <Wire Id="w11" Joints="N(n12:SequenceOut) N(n28:SequenceIn)" />
                 <Wire Id="w12" Joints="N(n12:valueOut) v(38) h(-318) N(n11:name)" />
+                <Comment Bounds="408 -132 470 80" SizeMode="User" AttachStyle="Free">
+                    <Content>Drives out of base and goes to line</Content>
+                </Comment>
+                <Comment Bounds="979 -132 100 80" SizeMode="User" AttachStyle="Free">
+                    <Content>Backs away from line toward the factory</Content>
+                </Comment>
+                <Comment Bounds="1152 -156 142 103" SizeMode="User" AttachStyle="Free">
+                    <Content>drives forward to get the factory plane, the plastic bag, drops the methane into its hole, and drops Jimmy into sorter area.</Content>
+                </Comment>
+                <Comment Bounds="1356 -151 100 88" SizeMode="User" AttachStyle="Free">
+                    <Content>Raises A motor to get the plastic bag arm out of the way</Content>
+                </Comment>
+                <Comment Bounds="1514 -133 100 80" SizeMode="User" AttachStyle="Free">
+                    <Content>Drives away from the factory</Content>
+                </Comment>
+                <Comment Bounds="1679 -131 100 80" SizeMode="User" AttachStyle="Free">
+                    <Content>Turns so it faces base</Content>
+                </Comment>
+                <Comment Bounds="1839 -134 100 80" SizeMode="User" AttachStyle="Free">
+                    <Content>Drives back to base</Content>
+                </Comment>
             </BlockDiagram>
         </VirtualInstrument>
     </Namespace>
