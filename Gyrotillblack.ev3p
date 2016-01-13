@@ -174,7 +174,7 @@
                         <ConfigurableMethodTerminal ConfiguredValue="5">
                             <Terminal Id="Comparison" Direction="Input" DataType="Int32" Hotspot="0.5 1" Bounds="85 56 30 27" />
                         </ConfigurableMethodTerminal>
-                        <ConfigurableMethodTerminal ConfiguredValue="20">
+                        <ConfigurableMethodTerminal ConfiguredValue="15">
                             <Terminal Id="Threshold" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="116 56 30 27" />
                         </ConfigurableMethodTerminal>
                         <ConfigurableMethodTerminal ConfiguredValue="0">
@@ -233,7 +233,7 @@
                     </ConfigurableMethodTerminal>
                 </ConfigurableMegaAccessor>
                 <Wire Id="w10" Joints="N(n17:heading) v(233) h(731) N(b22:n15)" />
-                <Wire Id="w13" Joints="N(n17:maxspeed) v(22) h(267) N(n19:x) B(0) v(263) h(1339) N(b23:n15)" />
+                <Wire Id="w13" Joints="N(n17:maxspeed) v(263) h(1339) N(b23:n15) B(0) v(22) h(267) N(n19:x)" />
                 <Wire Id="w15" Joints="N(n17:port) v(197) h(1409) N(b25:n15)" />
                 <Wire Id="w16" Joints="N(n1:SequenceOut) N(n19:SequenceIn)" />
                 <Wire Id="w18" Joints="N(n17:brake\?) v(303) h(1716) N(n8:Brake\ At\ End)" />
