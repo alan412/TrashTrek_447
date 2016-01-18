@@ -34,7 +34,7 @@
                 <SourceFileReference StoragePath="gyroCalib2.ev3p" RelativeStoragePath="gyroCalib2.ev3p" OverridingDocumentTypeIdentifier="X3VIDocument" DocumentTypeIdentifier="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="gyroCalib2\.ev3p" Bindings="Envoy,DefinitionReference,SourceFileReference,X3VIDocument">
                     <X3DocumentSettings ShowFileOnStartup="False" IsTeacherOnlyFile="False" IsHiddenDependency="False" xmlns="http://www.ni.com/X3DocumentSettings.xsd" />
                 </SourceFileReference>
-                <SourceFileReference StoragePath="Master.ev3p" RelativeStoragePath="Master.ev3p" OverridingDocumentTypeIdentifier="X3VIDocument" DocumentTypeIdentifier="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Master\.ev3p" Bindings="Envoy,DefinitionReference,SourceFileReference,X3VIDocument" />
+                <SourceFileReference StoragePath="___Master.ev3p" RelativeStoragePath="___Master.ev3p" OverridingDocumentTypeIdentifier="X3VIDocument" DocumentTypeIdentifier="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="___Master\.ev3p" Bindings="Envoy,DefinitionReference,SourceFileReference,X3VIDocument" />
                 <SourceFileReference StoragePath="displaymastertext.ev3p" RelativeStoragePath="displaymastertext.ev3p" OverridingDocumentTypeIdentifier="X3VIDocument" DocumentTypeIdentifier="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="displaymastertext\.ev3p" Bindings="Envoy,DefinitionReference,SourceFileReference,X3VIDocument">
                     <X3DocumentSettings ShowFileOnStartup="False" IsTeacherOnlyFile="False" IsHiddenDependency="False" xmlns="http://www.ni.com/X3DocumentSettings.xsd" />
                 </SourceFileReference>
