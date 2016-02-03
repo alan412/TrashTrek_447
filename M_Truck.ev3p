@@ -75,7 +75,7 @@
                             <ConfigurableMethodTerminal ConfiguredValue="20">
                                 <Terminal Id="maxspeed" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="85 56 30 27" />
                             </ConfigurableMethodTerminal>
-                            <ConfigurableMethodTerminal ConfiguredValue="0.4">
+                            <ConfigurableMethodTerminal ConfiguredValue="0.6">
                                 <Terminal Id="proportional" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="116 56 30 27" />
                             </ConfigurableMethodTerminal>
                             <Terminal Id="SequenceIn" Direction="Input" Wire="w16" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
@@ -490,11 +490,6 @@
                 <Wire Id="w11" Joints="N(n12:run\?) v(16) h(273) N(n15:Boolean)" />
                 <Wire Id="w12" Joints="N(n11:valueOut) v(32) h(-221) N(n13:name)" />
                 <Wire Id="w13" Joints="N(n11:SequenceOut) N(n15:SequenceIn)" />
-                <Comment Bounds="513 -286 100 80" SizeMode="User" AttachStyle="Free">
-                    <Content>was .6 for N
- |
-\/</Content>
-                </Comment>
                 <Comment Bounds="-82 -240 216 184" SizeMode="User" AttachStyle="Free">
                     <Content>This mission pushes the truck along the guide completing transport.  (We also drop off the engine for scrap cars.)  In this mission, we also grab the toy plane for Purchasing Desicions and collect the compost box with the puck, bringing them both back into base.</Content>
                 </Comment>
