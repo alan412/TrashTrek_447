@@ -27,12 +27,6 @@
                         <Terminal Id="name" Direction="Input" Wire="w12" DataType="String" Hotspot="0.5 1" Bounds="10 56 30 27" />
                     </ConfigurableMethodTerminal>
                 </ConfigurableMegaAccessor>
-                <Comment Bounds="1477 -235 100 80" SizeMode="User" AttachStyle="Free">
-                    <Content>Was -196
-   |
-   |
-   V</Content>
-                </Comment>
                 <ConfigurableMethodCall Id="n11" Bounds="80 0 101 91" Target="X3\.Lib:GlobalConstString">
                     <ConfigurableMethodTerminal>
                         <Terminal Id="valueOut" Direction="Output" Wire="w12" DataType="String" Hotspot="0.5 1" Bounds="54 56 30 27" />
@@ -43,13 +37,13 @@
                     <Terminal Id="SequenceIn" Direction="Input" Wire="w9" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
                     <Terminal Id="SequenceOut" Direction="Output" Wire="w13" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="83 33 18 18" />
                 </ConfigurableMethodCall>
-                <ConfigurableCaseStructure Id="n14" Bounds="266 -155 3426 303" DataType="Boolean" UserSelectorBounds="0 0 0 0" Selected="D13" Default="D13" PairedConfigurableMethodCall="n15">
-                    <Terminal Id="SequenceOut" Direction="Output" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="3408 188 18 18" />
-                    <ConfigurableCaseStructure.Case Id="D13" Bounds="10 4 3406 296" Pattern="True">
+                <ConfigurableCaseStructure Id="n14" Bounds="266 -155 3530 303" DataType="Boolean" UserSelectorBounds="0 0 0 0" Selected="D13" Default="D13" PairedConfigurableMethodCall="n15">
+                    <Terminal Id="SequenceOut" Direction="Output" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="3512 188 18 18" />
+                    <ConfigurableCaseStructure.Case Id="D13" Bounds="10 4 3510 296" Pattern="True">
                         <SequenceNode Id="Output" Bounds="0 184 18 18">
                             <Terminal Id="SequenceTerminal" Direction="Output" Wire="w24" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="0 0 18 18" />
                         </SequenceNode>
-                        <SequenceNode Id="Input" Bounds="3379 184 18 18">
+                        <SequenceNode Id="Input" Bounds="3483 184 18 18">
                             <Terminal Id="SequenceTerminal" Direction="Input" Wire="w44" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 0 18 18" />
                         </SequenceNode>
                         <ConfigurableMethodCall Id="n4" Bounds="18 151 194 91" Target="GyroCM_PID\.ev3p">
@@ -81,7 +75,7 @@
                             <ConfigurableMethodTerminal ConfiguredValue="20">
                                 <Terminal Id="maxspeed" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="85 56 30 27" />
                             </ConfigurableMethodTerminal>
-                            <ConfigurableMethodTerminal ConfiguredValue="0.6">
+                            <ConfigurableMethodTerminal ConfiguredValue="0.4">
                                 <Terminal Id="proportional" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="116 56 30 27" />
                             </ConfigurableMethodTerminal>
                             <Terminal Id="SequenceIn" Direction="Input" Wire="w16" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
@@ -121,12 +115,6 @@
                         <Wire Id="w11" Joints="N(n28:SequenceOut) N(n40:SequenceIn)" />
                         <Wire Id="w14" Joints="N(n12:SequenceOut) N(n30:SequenceIn)" />
                         <Wire Id="w24" Joints="N(Output:SequenceTerminal) N(n4:SequenceIn)" />
-                        <Comment Bounds="29 55 340 80" SizeMode="User" AttachStyle="Free">
-                            <Content>Navigates to truck</Content>
-                        </Comment>
-                        <Comment Bounds="398 50 100 87" SizeMode="User" AttachStyle="Free">
-                            <Content>Pushes truck along the wall.  Gets the toy plane along the way</Content>
-                        </Comment>
                         <ConfigurableMethodCall Id="n14" Bounds="1398 150 194 91" Target="gyrotillwhite\.ev3p">
                             <ConfigurableMethodTerminal ConfiguredValue="0">
                                 <Terminal Id="InterruptsToListenFor_16B03592_CD76_4D58_8DC3_E3C3091E327A" Direction="Input" DataType="Int32" Hotspot="0.5 1" Bounds="0 0 0 0" />
@@ -170,7 +158,7 @@
                             <ConfigurableMethodTerminal ConfiguredValue="0">
                                 <Terminal Id="InterruptsToListenFor_16B03592_CD76_4D58_8DC3_E3C3091E327A" Direction="Input" DataType="Int32" Hotspot="0.5 1" Bounds="0 0 0 0" />
                             </ConfigurableMethodTerminal>
-                            <ConfigurableMethodTerminal ConfiguredValue="70">
+                            <ConfigurableMethodTerminal ConfiguredValue="68">
                                 <Terminal Id="heading" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
                             </ConfigurableMethodTerminal>
                             <ConfigurableMethodTerminal ConfiguredValue="20">
@@ -421,14 +409,68 @@
                             <Terminal Id="SequenceIn" Direction="Input" Wire="w37" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
                             <Terminal Id="SequenceOut" Direction="Output" Wire="w48" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="145 33 18 18" />
                         </ConfigurableMethodCall>
-                        <Wire Id="w44" Joints="N(n39:SequenceOut) h(-28) v(1) N(Input:SequenceTerminal)" />
                         <Wire Id="w48" Joints="N(n43:SequenceOut) N(n38:SequenceIn)" />
+                        <Wire Id="w44" Joints="N(n39:SequenceOut) h(38.5) v(1) N(Input:SequenceTerminal)" />
+                        <Comment Bounds="80 55 100 80" SizeMode="User" AttachStyle="Free">
+                            <Content>drives out of base toward the wall</Content>
+                        </Comment>
+                        <Comment Bounds="235 51 100 80" SizeMode="User" AttachStyle="Free">
+                            <Content>turns to face truck</Content>
+                        </Comment>
+                        <Comment Bounds="372 14 148 122" SizeMode="User" AttachStyle="Free">
+                            <Content>Follows wall, pushing truck along the way and dropping the yellow bin.  At the end, the toy plane gets caught in the one way trap</Content>
+                        </Comment>
+                        <Comment Bounds="570 52 100 80" SizeMode="User" AttachStyle="Free">
+                            <Content>Swings so the robot does not get caught on transfer</Content>
+                        </Comment>
+                        <Comment Bounds="731 63 100 80" SizeMode="User" AttachStyle="Free">
+                            <Content>turns so the back of the robot faces the wall</Content>
+                        </Comment>
+                        <Comment Bounds="915 63 100 80" SizeMode="User" AttachStyle="Free">
+                            <Content>Backs into the wall so we are squared</Content>
+                        </Comment>
+                        <Comment Bounds="1058 68 172 80" SizeMode="User" AttachStyle="Free">
+                            <Content>Resets the gyro so we do not have any problems with the the gyro reading the incorrect angle</Content>
+                        </Comment>
+                        <Comment Bounds="1269 58 100 80" SizeMode="User" AttachStyle="Free">
+                            <Content>Drives so it is close to the line</Content>
+                        </Comment>
+                        <Comment Bounds="1453 60 100 80" SizeMode="User" AttachStyle="Free">
+                            <Content>Finds the line</Content>
+                        </Comment>
+                        <Comment Bounds="1648 66 100 80" SizeMode="User" AttachStyle="Free">
+                            <Content>Debugging</Content>
+                        </Comment>
+                        <Comment Bounds="1819 61 100 80" SizeMode="User" AttachStyle="Free">
+                            <Content>Drives into scrap cars (dropping the engine)</Content>
+                        </Comment>
+                        <Comment Bounds="2002 56 100 80" SizeMode="User" AttachStyle="Free">
+                            <Content>Backs up so we don't get stuck on scrap cars</Content>
+                        </Comment>
+                        <Comment Bounds="2178 47 100 91" SizeMode="User" AttachStyle="Free">
+                            <Content>Turns to the correct angle to get the compost basket</Content>
+                        </Comment>
+                        <Comment Bounds="2327 50 100 80" SizeMode="User" AttachStyle="Free">
+                            <Content>Drops the basket catcher</Content>
+                        </Comment>
+                        <Comment Bounds="2484 52 100 91" SizeMode="User" AttachStyle="Free">
+                            <Content>Finds the black line getting the compost basket</Content>
+                        </Comment>
+                        <Comment Bounds="2890 63 115 80" SizeMode="User" AttachStyle="Free">
+                            <Content>This turns past the target angle so we don't get stuck</Content>
+                        </Comment>
+                        <Comment Bounds="3065 34 100 103" SizeMode="User" AttachStyle="Free">
+                            <Content>Turns to the target angles and drives toward base at an untuned speed</Content>
+                        </Comment>
+                        <Comment Bounds="3270 58 100 80" SizeMode="User" AttachStyle="Free">
+                            <Content>Drives into base</Content>
+                        </Comment>
                     </ConfigurableCaseStructure.Case>
-                    <ConfigurableCaseStructure.Case Id="D14" Bounds="10 4 3406 296" Pattern="False">
+                    <ConfigurableCaseStructure.Case Id="D14" Bounds="10 4 3510 296" Pattern="False">
                         <SequenceNode Id="Output" Bounds="0 184 18 18">
                             <Terminal Id="SequenceTerminal" Direction="Output" Wire="w3" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="0 0 18 18" />
                         </SequenceNode>
-                        <SequenceNode Id="Input" Bounds="3379 184 18 18">
+                        <SequenceNode Id="Input" Bounds="3483 184 18 18">
                             <Terminal Id="SequenceTerminal" Direction="Input" Wire="w3" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 0 18 18" />
                         </SequenceNode>
                         <Wire Id="w3" Joints="N(Output:SequenceTerminal) N(Input:SequenceTerminal)" />
@@ -447,16 +489,15 @@
                 <Wire Id="w9" Joints="N(n1:SequenceOut) N(n11:SequenceIn)" />
                 <Wire Id="w11" Joints="N(n12:run\?) v(16) h(273) N(n15:Boolean)" />
                 <Wire Id="w12" Joints="N(n11:valueOut) v(32) h(-221) N(n13:name)" />
-                <Comment Bounds="823 -278 244 80" SizeMode="User" AttachStyle="Free">
-                    <Content>clears scrap cars</Content>
-                </Comment>
-                <Comment Bounds="1117 -326 198 80" SizeMode="User" AttachStyle="Free">
-                    <Content>Clears sorter</Content>
-                </Comment>
-                <Comment Bounds="1515 -338 483 80" SizeMode="User" AttachStyle="Free">
-                    <Content>Navigates to base</Content>
-                </Comment>
                 <Wire Id="w13" Joints="N(n11:SequenceOut) N(n15:SequenceIn)" />
+                <Comment Bounds="513 -286 100 80" SizeMode="User" AttachStyle="Free">
+                    <Content>was .6 for N
+ |
+\/</Content>
+                </Comment>
+                <Comment Bounds="-82 -240 216 184" SizeMode="User" AttachStyle="Free">
+                    <Content>This mission pushes the truck along the guide completing transport.  (We also drop off the engine for scrap cars.)  In this mission, we also grab the toy plane for Purchasing Desicions and collect the compost box with the puck, bringing them both back into base.</Content>
+                </Comment>
             </BlockDiagram>
         </VirtualInstrument>
     </Namespace>
