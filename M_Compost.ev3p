@@ -40,16 +40,16 @@
                 </ConfigurableMethodCall>
                 <Wire Id="w19" Joints="N(n18:SequenceOut) N(n29:SequenceIn)" />
                 <Wire Id="w20" Joints="N(n18:valueOut) v(185) h(-117) N(n21:name)" />
-                <ConfigurableCaseStructure Id="n27" Bounds="313 -107 2673 237" DataType="Boolean" UserSelectorBounds="0 0 0 0" Selected="D27" Default="D27" PairedConfigurableMethodCall="n29">
-                    <Terminal Id="SequenceOut" Direction="Output" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="2655 140 18 18" />
-                    <ConfigurableCaseStructure.Case Id="D27" Bounds="10 4 2653 230" Pattern="True">
-                        <SequenceNode Id="Output" Bounds="0 136 18 18">
+                <ConfigurableCaseStructure Id="n27" Bounds="313 -122 2673 252" DataType="Boolean" UserSelectorBounds="0 0 0 0" Selected="D27" Default="D27" PairedConfigurableMethodCall="n29">
+                    <Terminal Id="SequenceOut" Direction="Output" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="2655 155 18 18" />
+                    <ConfigurableCaseStructure.Case Id="D27" Bounds="10 4 2653 245" Pattern="True">
+                        <SequenceNode Id="Output" Bounds="0 151 18 18">
                             <Terminal Id="SequenceTerminal" Direction="Output" Wire="w29" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="0 0 18 18" />
                         </SequenceNode>
-                        <SequenceNode Id="Input" Bounds="2626 136 18 18">
+                        <SequenceNode Id="Input" Bounds="2626 151 18 18">
                             <Terminal Id="SequenceTerminal" Direction="Input" Wire="w37" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 0 18 18" />
                         </SequenceNode>
-                        <ConfigurableMethodCall Id="n14" Bounds="18 103 194 91" Target="GyroCM_PID\.ev3p">
+                        <ConfigurableMethodCall Id="n14" Bounds="18 118 194 91" Target="GyroCM_PID\.ev3p">
                             <ConfigurableMethodTerminal ConfiguredValue="False">
                                 <Terminal Id="Brake\?" Direction="Input" DataType="Boolean" Hotspot="0.5 1" Bounds="147 56 30 27" />
                             </ConfigurableMethodTerminal>
@@ -68,7 +68,7 @@
                             <Terminal Id="SequenceIn" Direction="Input" Wire="w29" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
                             <Terminal Id="SequenceOut" Direction="Output" Wire="w14" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="176 33 18 18" />
                         </ConfigurableMethodCall>
-                        <ConfigurableMethodCall Id="n6" Bounds="476 103 194 91" Target="GyroCM_PID\.ev3p">
+                        <ConfigurableMethodCall Id="n6" Bounds="476 118 194 91" Target="GyroCM_PID\.ev3p">
                             <ConfigurableMethodTerminal ConfiguredValue="False">
                                 <Terminal Id="Brake\?" Direction="Input" DataType="Boolean" Hotspot="0.5 1" Bounds="147 56 30 27" />
                             </ConfigurableMethodTerminal>
@@ -87,7 +87,7 @@
                             <Terminal Id="SequenceIn" Direction="Input" Wire="w26" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
                             <Terminal Id="SequenceOut" Direction="Output" Wire="w18" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="176 33 18 18" />
                         </ConfigurableMethodCall>
-                        <ConfigurableMethodCall Id="n7" Bounds="1322 103 163 91" Target="Drive_CM\.ev3p">
+                        <ConfigurableMethodCall Id="n7" Bounds="1322 118 163 91" Target="Drive_CM\.ev3p">
                             <ConfigurableMethodTerminal ConfiguredValue="0">
                                 <Terminal Id="InterruptsToListenFor_16B03592_CD76_4D58_8DC3_E3C3091E327A" Direction="Input" DataType="Int32" Hotspot="0.5 1" Bounds="0 0 0 0" />
                             </ConfigurableMethodTerminal>
@@ -103,7 +103,7 @@
                             <Terminal Id="SequenceIn" Direction="Input" Wire="w8" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
                             <Terminal Id="SequenceOut" Direction="Output" Wire="w16" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="145 33 18 18" />
                         </ConfigurableMethodCall>
-                        <ConfigurableWaitFor Id="n8" Bounds="1221 103 101 91" Target="TimeCompare\.vix">
+                        <ConfigurableWaitFor Id="n8" Bounds="1221 118 101 91" Target="TimeCompare\.vix">
                             <ConfigurableMethodTerminal ConfiguredValue="0.5">
                                 <Terminal Id="How\ Long" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
                             </ConfigurableMethodTerminal>
@@ -118,7 +118,7 @@
                         </ConfigurableWaitFor>
                         <Wire Id="w18" Joints="N(n6:SequenceOut) N(n35:SequenceIn)" />
                         <Wire Id="w8" Joints="N(n8:SequenceOut) N(n7:SequenceIn)" />
-                        <ConfigurableMethodCall Id="n16" Bounds="212 103 163 91" Target="GyroTurnToAngle\.ev3p">
+                        <ConfigurableMethodCall Id="n16" Bounds="212 118 163 91" Target="GyroTurnToAngle\.ev3p">
                             <ConfigurableMethodTerminal ConfiguredValue="0">
                                 <Terminal Id="InterruptsToListenFor_16B03592_CD76_4D58_8DC3_E3C3091E327A" Direction="Input" DataType="Int32" Hotspot="0.5 1" Bounds="0 0 0 0" />
                             </ConfigurableMethodTerminal>
@@ -135,7 +135,7 @@
                             <Terminal Id="SequenceOut" Direction="Output" Wire="w27" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="145 33 18 18" />
                         </ConfigurableMethodCall>
                         <Wire Id="w14" Joints="N(n14:SequenceOut) N(n16:SequenceIn)" />
-                        <ConfigurableMethodCall Id="n15" Bounds="1485 103 163 91" Target="GyroTurnToAngle\.ev3p">
+                        <ConfigurableMethodCall Id="n15" Bounds="1485 118 163 91" Target="GyroTurnToAngle\.ev3p">
                             <ConfigurableMethodTerminal ConfiguredValue="0">
                                 <Terminal Id="InterruptsToListenFor_16B03592_CD76_4D58_8DC3_E3C3091E327A" Direction="Input" DataType="Int32" Hotspot="0.5 1" Bounds="0 0 0 0" />
                             </ConfigurableMethodTerminal>
@@ -152,7 +152,7 @@
                             <Terminal Id="SequenceOut" Direction="Output" Wire="w24" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="145 33 18 18" />
                         </ConfigurableMethodCall>
                         <Wire Id="w16" Joints="N(n7:SequenceOut) N(n15:SequenceIn)" />
-                        <ConfigurableMethodCall Id="n17" Bounds="1648 103 163 91" Target="Drive_CM\.ev3p">
+                        <ConfigurableMethodCall Id="n17" Bounds="1648 118 163 91" Target="Drive_CM\.ev3p">
                             <ConfigurableMethodTerminal ConfiguredValue="0">
                                 <Terminal Id="InterruptsToListenFor_16B03592_CD76_4D58_8DC3_E3C3091E327A" Direction="Input" DataType="Int32" Hotspot="0.5 1" Bounds="0 0 0 0" />
                             </ConfigurableMethodTerminal>
@@ -169,7 +169,7 @@
                             <Terminal Id="SequenceOut" Direction="Output" Wire="w22" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="145 33 18 18" />
                         </ConfigurableMethodCall>
                         <Wire Id="w24" Joints="N(n15:SequenceOut) N(n17:SequenceIn)" />
-                        <ConfigurableWaitFor Id="n25" Bounds="375 103 101 91" Target="TimeCompare\.vix">
+                        <ConfigurableWaitFor Id="n25" Bounds="375 118 101 91" Target="TimeCompare\.vix">
                             <ConfigurableMethodTerminal ConfiguredValue="0.5">
                                 <Terminal Id="How\ Long" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
                             </ConfigurableMethodTerminal>
@@ -184,7 +184,7 @@
                         </ConfigurableWaitFor>
                         <Wire Id="w26" Joints="N(n25:SequenceOut) N(n6:SequenceIn)" />
                         <Wire Id="w27" Joints="N(n16:SequenceOut) N(n25:SequenceIn)" />
-                        <ConfigurableMethodCall Id="n28" Bounds="1811 103 163 91" Target="Drive_CM\.ev3p">
+                        <ConfigurableMethodCall Id="n28" Bounds="1811 118 163 91" Target="Drive_CM\.ev3p">
                             <ConfigurableMethodTerminal ConfiguredValue="0">
                                 <Terminal Id="InterruptsToListenFor_16B03592_CD76_4D58_8DC3_E3C3091E327A" Direction="Input" DataType="Int32" Hotspot="0.5 1" Bounds="0 0 0 0" />
                             </ConfigurableMethodTerminal>
@@ -201,7 +201,7 @@
                             <Terminal Id="SequenceOut" Direction="Output" Wire="w31" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="145 33 18 18" />
                         </ConfigurableMethodCall>
                         <Wire Id="w22" Joints="N(n17:SequenceOut) N(n28:SequenceIn)" />
-                        <ConfigurableMethodCall Id="n23" Bounds="1974 103 163 91" Target="GyroTurnToAngle\.ev3p">
+                        <ConfigurableMethodCall Id="n23" Bounds="1974 118 163 91" Target="GyroTurnToAngle\.ev3p">
                             <ConfigurableMethodTerminal ConfiguredValue="0">
                                 <Terminal Id="InterruptsToListenFor_16B03592_CD76_4D58_8DC3_E3C3091E327A" Direction="Input" DataType="Int32" Hotspot="0.5 1" Bounds="0 0 0 0" />
                             </ConfigurableMethodTerminal>
@@ -218,7 +218,7 @@
                             <Terminal Id="SequenceOut" Direction="Output" Wire="w33" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="145 33 18 18" />
                         </ConfigurableMethodCall>
                         <Wire Id="w31" Joints="N(n28:SequenceOut) N(n23:SequenceIn)" />
-                        <ConfigurableMethodCall Id="n32" Bounds="2137 103 163 91" Target="Drive_CM\.ev3p">
+                        <ConfigurableMethodCall Id="n32" Bounds="2137 118 163 91" Target="Drive_CM\.ev3p">
                             <ConfigurableMethodTerminal ConfiguredValue="0">
                                 <Terminal Id="InterruptsToListenFor_16B03592_CD76_4D58_8DC3_E3C3091E327A" Direction="Input" DataType="Int32" Hotspot="0.5 1" Bounds="0 0 0 0" />
                             </ConfigurableMethodTerminal>
@@ -235,7 +235,7 @@
                             <Terminal Id="SequenceOut" Direction="Output" Wire="w28" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="145 33 18 18" />
                         </ConfigurableMethodCall>
                         <Wire Id="w33" Joints="N(n23:SequenceOut) N(n32:SequenceIn)" />
-                        <ConfigurableMethodCall Id="n34" Bounds="2300 103 163 91" Target="GyroTurnToAngle\.ev3p">
+                        <ConfigurableMethodCall Id="n34" Bounds="2300 118 163 91" Target="GyroTurnToAngle\.ev3p">
                             <ConfigurableMethodTerminal ConfiguredValue="0">
                                 <Terminal Id="InterruptsToListenFor_16B03592_CD76_4D58_8DC3_E3C3091E327A" Direction="Input" DataType="Int32" Hotspot="0.5 1" Bounds="0 0 0 0" />
                             </ConfigurableMethodTerminal>
@@ -252,7 +252,7 @@
                             <Terminal Id="SequenceOut" Direction="Output" Wire="w30" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="145 33 18 18" />
                         </ConfigurableMethodCall>
                         <Wire Id="w28" Joints="N(n32:SequenceOut) N(n34:SequenceIn)" />
-                        <ConfigurableMethodCall Id="n36" Bounds="2463 103 163 91" Target="Drive_CM\.ev3p">
+                        <ConfigurableMethodCall Id="n36" Bounds="2463 118 163 91" Target="Drive_CM\.ev3p">
                             <ConfigurableMethodTerminal ConfiguredValue="0">
                                 <Terminal Id="InterruptsToListenFor_16B03592_CD76_4D58_8DC3_E3C3091E327A" Direction="Input" DataType="Int32" Hotspot="0.5 1" Bounds="0 0 0 0" />
                             </ConfigurableMethodTerminal>
@@ -270,7 +270,7 @@
                         </ConfigurableMethodCall>
                         <Wire Id="w30" Joints="N(n34:SequenceOut) N(n36:SequenceIn)" />
                         <Wire Id="w29" Joints="N(Output:SequenceTerminal) N(n14:SequenceIn)" />
-                        <ConfigurableMethodCall Id="n13" Bounds="864 103 163 91" Target="Cm2Output\.ev3p">
+                        <ConfigurableMethodCall Id="n13" Bounds="864 118 163 91" Target="Cm2Output\.ev3p">
                             <ConfigurableMethodTerminal ConfiguredValue="25">
                                 <Terminal Id="Centimeters" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
                             </ConfigurableMethodTerminal>
@@ -287,7 +287,7 @@
                             <Terminal Id="SequenceOut" Direction="Output" Wire="w34" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="145 33 18 18" />
                         </ConfigurableMethodCall>
                         <Wire Id="w34" Joints="N(n13:SequenceOut) N(n33:SequenceIn)" />
-                        <ConfigurableMethodCall Id="n33" Bounds="1027 103 194 91" Target="MoveDistance\.vix">
+                        <ConfigurableMethodCall Id="n33" Bounds="1027 118 194 91" Target="MoveDistance\.vix">
                             <ConfigurableMethodTerminal ConfiguredValue="1.B+C">
                                 <Terminal Id="Ports" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="0 0 0 0" />
                             </ConfigurableMethodTerminal>
@@ -311,7 +311,7 @@
                         </ConfigurableMethodCall>
                         <Wire Id="w35" Joints="N(n33:SequenceOut) N(n8:SequenceIn)" />
                         <Wire Id="w36" Joints="N(n13:degrees) v(22) h(163) N(n33:Degrees)" />
-                        <ConfigurableMethodCall Id="n35" Bounds="670 103 194 91" Target="PlayNote\.vix">
+                        <ConfigurableMethodCall Id="n35" Bounds="670 118 194 91" Target="PlayNote\.vix">
                             <ConfigurableMethodTerminal ConfiguredValue="C4">
                                 <Terminal Id="Note" Direction="Input" DataType="String" Hotspot="0.5 1" Bounds="54 56 30 27" />
                             </ConfigurableMethodTerminal>
@@ -332,12 +332,42 @@
                         </ConfigurableMethodCall>
                         <Wire Id="w38" Joints="N(n35:SequenceOut) N(n13:SequenceIn)" />
                         <Wire Id="w37" Joints="N(n36:SequenceOut) N(Input:SequenceTerminal)" />
+                        <Comment Bounds="181 28 100 80" SizeMode="User" AttachStyle="Free">
+                            <Content>leaves base and faces compost</Content>
+                        </Comment>
+                        <Comment Bounds="380 28 100 80" SizeMode="User" AttachStyle="Free">
+                            <Content>This wait is here to smooth out the motion.</Content>
+                        </Comment>
+                        <Comment Bounds="498 61 144 52" SizeMode="User" AttachStyle="Free">
+                            <Content>Drives almost to the compost model</Content>
+                        </Comment>
+                        <Comment Bounds="728 25 100 80" SizeMode="User" AttachStyle="Free">
+                            <Content>debugging</Content>
+                        </Comment>
+                        <Comment Bounds="870 22 342 94" SizeMode="User" AttachStyle="Free">
+                            <Content>We run into the compost model more slowly, starting the composting process and leaving behind a box to pick up later.  (We do not use our drivecm or gyrocm here because we don't want the ramping that is included in those my blocks</Content>
+                        </Comment>
+                        <Comment Bounds="1234 29 100 80" SizeMode="User" AttachStyle="Free">
+                            <Content>We pause to let the compost fully activate</Content>
+                        </Comment>
+                        <Comment Bounds="1367 29 100 80" SizeMode="User" AttachStyle="Free">
+                            <Content>We back away from the compost model</Content>
+                        </Comment>
+                        <Comment Bounds="1513 29 100 80" SizeMode="User" AttachStyle="Free">
+                            <Content>and turn towards the turtle and the plastic bag</Content>
+                        </Comment>
+                        <Comment Bounds="1700 36 240 80" SizeMode="User" AttachStyle="Free">
+                            <Content>We drive forwards and back, catching both models in a one-way trap.</Content>
+                        </Comment>
+                        <Comment Bounds="2052 62 489 45" SizeMode="User" AttachStyle="Free">
+                            <Content>then we navigate back to base</Content>
+                        </Comment>
                     </ConfigurableCaseStructure.Case>
-                    <ConfigurableCaseStructure.Case Id="D28" Bounds="10 4 2653 230" Pattern="False">
-                        <SequenceNode Id="Output" Bounds="0 136 18 18">
+                    <ConfigurableCaseStructure.Case Id="D28" Bounds="10 4 2653 245" Pattern="False">
+                        <SequenceNode Id="Output" Bounds="0 151 18 18">
                             <Terminal Id="SequenceTerminal" Direction="Output" Wire="w3" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="0 0 18 18" />
                         </SequenceNode>
-                        <SequenceNode Id="Input" Bounds="2626 136 18 18">
+                        <SequenceNode Id="Input" Bounds="2626 151 18 18">
                             <Terminal Id="SequenceTerminal" Direction="Input" Wire="w3" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 0 18 18" />
                         </SequenceNode>
                         <Wire Id="w3" Joints="N(Output:SequenceTerminal) N(Input:SequenceTerminal)" />
@@ -354,6 +384,9 @@
                     <Terminal Id="SequenceOut" Direction="Output" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="0 0 0 0" />
                 </PairedConfigurableMethodCall>
                 <Wire Id="w12" Joints="N(n19:run\?) v(22) h(353) N(n29:Boolean)" />
+                <Comment Bounds="19 -157 195 115" SizeMode="User" AttachStyle="Free">
+                    <Content>This mission ejects the compost, leaves a box to pick up later, and then brings the turtle and plastic bag that are in the big circle, back to base.</Content>
+                </Comment>
             </BlockDiagram>
         </VirtualInstrument>
     </Namespace>

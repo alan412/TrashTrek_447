@@ -299,7 +299,7 @@
                 <Wire Id="w11" Joints="N(n12:Run\?) v(22) h(280) N(n22:Boolean)" />
                 <Wire Id="w12" Joints="N(n6:valueOut) v(34) h(-236) N(n13:Name)" />
                 <Wire Id="w13" Joints="N(n1:SequenceOut) N(n6:SequenceIn)" />
-                <Comment Bounds="-109 -136 163 99" SizeMode="User" AttachStyle="Free">
+                <Comment Bounds="-109 -136 204 114" SizeMode="User" AttachStyle="Free">
                     <Content>This mission drops off the black bars in the dumpster and leaves all three animals in the big circle behind demolition.</Content>
                 </Comment>
             </BlockDiagram>
