@@ -55,12 +55,6 @@
                     <Terminal Id="SequenceIn" Direction="Input" Wire="w7" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
                     <Terminal Id="SequenceOut" Direction="Output" Wire="w35" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="145 33 18 18" />
                 </ConfigurableMethodCall>
-                <Comment Bounds="-53 81 100 80" SizeMode="User" AttachStyle="Free">
-                    <Content>drives out of base toward the wall</Content>
-                </Comment>
-                <Comment Bounds="-40 367 100 80" SizeMode="User" AttachStyle="Free">
-                    <Content>turns to face truck</Content>
-                </Comment>
                 <Wire Id="w7" Joints="N(n4:SequenceOut) N(n6:SequenceIn)" />
                 <ConfigurableMethodCall Id="n28" Bounds="705 0 132 91" Target="follow_wall\.ev3p">
                     <ConfigurableMethodTerminal ConfiguredValue="0">
@@ -360,7 +354,7 @@
                 <Comment Bounds="2179 100 100 80" SizeMode="User" AttachStyle="Free">
                     <Content>rod goes down to release the truck</Content>
                 </Comment>
-                <Wire Id="w46" Joints="N(n2:SequenceOut) h(20) v(119) N(n20:SequenceIn) B(0) N(n4:SequenceIn)" />
+                <Wire Id="w46" Joints="N(n2:SequenceOut) N(n4:SequenceIn) B(0) h(20) v(119) N(n20:SequenceIn)" />
                 <Comment Bounds="229 -105 89 80" SizeMode="User" AttachStyle="Free">
                     <Content>leaves base</Content>
                 </Comment>
@@ -381,9 +375,6 @@
                 </Comment>
                 <Comment Bounds="1254 -88 100 80" SizeMode="User" AttachStyle="Free">
                     <Content>wall follows past the truck</Content>
-                </Comment>
-                <Comment Bounds="1681 209 100 80" SizeMode="User" AttachStyle="Free">
-                    <Content></Content>
                 </Comment>
                 <Comment Bounds="1508 93 100 80" SizeMode="User" AttachStyle="Free">
                     <Content>Lowers bar to go under the truck</Content>
