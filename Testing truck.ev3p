@@ -354,7 +354,7 @@
                 <Comment Bounds="2179 100 100 80" SizeMode="User" AttachStyle="Free">
                     <Content>rod goes down to release the truck</Content>
                 </Comment>
-                <Wire Id="w46" Joints="N(n2:SequenceOut) N(n4:SequenceIn) B(0) h(20) v(119) N(n20:SequenceIn)" />
+                <Wire Id="w46" Joints="N(n2:SequenceOut) h(20) v(119) N(n20:SequenceIn) B(0) N(n4:SequenceIn)" />
                 <Comment Bounds="229 -105 89 80" SizeMode="User" AttachStyle="Free">
                     <Content>leaves base</Content>
                 </Comment>
