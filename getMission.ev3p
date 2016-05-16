@@ -31,7 +31,7 @@
                         <Terminal Id="mission\ name" Direction="Input" Wire="w13" DataType="String" Hotspot="0.5 1" Bounds="10 56 30 27" />
                     </ConfigurableMethodTerminal>
                 </ConfigurableMegaAccessor>
-                <ConfigurableCaseStructure Id="n10" Bounds="165 -46 627 233" DataType="Int32" UserSelectorBounds="0 0 0 0" Selected="D17" Default="D17" PairedConfigurableMethodCall="n12">
+                <ConfigurableCaseStructure Id="n10" Bounds="165 -46 627 233" DataType="Int32" UserSelectorBounds="0 0 0 0" Selected="D22" Default="D17" PairedConfigurableMethodCall="n12">
                     <Terminal Id="SequenceOut" Direction="Output" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="609 79 18 18" />
                     <ConfigurableCaseStructure.Case Id="D17" Bounds="10 4 607 226" Pattern="1">
                         <SequenceNode Id="n1" Bounds="0 75 18 18">
@@ -83,7 +83,7 @@
                         <Wire Id="w8" Joints="N(b10:D18) N(n18:run\?)" />
                         <Wire Id="w9" Joints="N(n18:Name) N(b11:D18)" />
                     </ConfigurableCaseStructure.Case>
-                    <ConfigurableCaseStructure.Case Id="D19" Bounds="10 4 607 226" Pattern="3">
+                    <ConfigurableCaseStructure.Case Id="D19" Bounds="10 4 607 226" Pattern="4">
                         <SequenceNode Id="n1" Bounds="0 75 18 18">
                             <Terminal Id="Output" Direction="Output" Wire="w6" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="0 0 18 18" />
                         </SequenceNode>
@@ -108,7 +108,7 @@
                         <Wire Id="w8" Joints="N(b10:D19) N(n18:run\?)" />
                         <Wire Id="w9" Joints="N(n18:name) N(b11:D19)" />
                     </ConfigurableCaseStructure.Case>
-                    <ConfigurableCaseStructure.Case Id="D22" Bounds="10 4 607 226" Pattern="4">
+                    <ConfigurableCaseStructure.Case Id="D22" Bounds="10 4 607 226" Pattern="3">
                         <SequenceNode Id="n1" Bounds="0 75 18 18">
                             <Terminal Id="Output" Direction="Output" Wire="w6" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="0 0 18 18" />
                         </SequenceNode>
